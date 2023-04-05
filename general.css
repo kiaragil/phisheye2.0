@@ -77,6 +77,10 @@ p3 {
 
 } */
 
+a {
+    color: #181818;
+    text-decoration: none;
+}
 
 .section {
     width: 1000px;

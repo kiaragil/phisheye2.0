@@ -65,6 +65,10 @@
     margin-right: 90px;
 } 
 
+.row-2 {
+    justify-content: right;
+}
+
 .row-1 h2{
     width: max-content;
     flex: 2 1 190px;
@@ -73,34 +77,41 @@
 
 .row-1 p3 {
     margin-top: 30px;
-    width: 45%;
+    width: 65%;
     word-wrap: break-word;
     text-align: justify;
 
 }
 
-.row-2 .case-type { 
-    margin-top: -30px;
+.case-type p3 {
+    font-weight: 100;
 }
 
-
 .row-2 .view-project {
-    margin-top: 30px;
+    padding: 0;
+    margin: 0;
+    margin-top: 35px;
     font-weight: 600;
+
+}
+
+.view-project :hover {
+    text-decoration: none;
+    font-style: italic;
 }
 
 .row-3 {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .case img {
     width: 650px;
     height: 350px;
-    outline-style: solid;
+    /* outline-style: solid;
     outline-color:  #181818;
-    outline-width: thin;
+    outline-width: thin; */
     
 }
 
@@ -126,33 +137,37 @@
 
 .case.half h2 {
     width: max-content;
-    margin-bottom: 10px;
-    padding-right: 230px;
+    margin-bottom: 15px;
+    /* padding-right: 200px;
+    padding-left: 38px; */
 }
 
 .case.half .case-type {
     width: max-content;
-    padding-right: 328px;
+    padding-left: 0px;
+    /* padding-right: 328px; */
 }
 
 .case.half p3 {
     display: block;
     text-align: justify;
-    padding: 0px 45px 10px 45px;
     margin: 0;
+    margin: 0px 45px 10px 45px;
 }
 
 .case.half .view-project {
     width: max-content;
-    margin-left: 300px;
-    margin-bottom: 15px;
+    /* margin-left: 300px; */
+    padding-bottom: 0;
+    /* margin-bottom: 15px; */
     font-weight: 600;
 }
 
 .case.half img {
     width: 400px;
-    height: 325px;
-    
+    height: 250px;
+    padding: 0;
+    margin: 0;
 }
 
 /*FOLIOS*/
@@ -181,11 +196,6 @@
 }
 
 
-.button a {
-    text-decoration: none;
-    color: #181818;
-}
-
 .button a:hover {
     font-style: italic;
 
@@ -208,8 +218,6 @@
 
 .contact a {
     padding: 0px 15px;
-    text-decoration: none;
-    color: #181818;
 }
 
 .contact a:hover {
