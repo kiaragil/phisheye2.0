@@ -1,11 +1,11 @@
 /*INTRO - TWO THIRD*/
 
 .content-frame .intro {
-    height: 300px;
+    height: max-content;
     outline-style: solid;
     outline-color:  #181818;
     outline-width: thin;
-    flex: 1 2 640px;
+    flex: 1 1 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,8 +14,9 @@
 
 
 .intro h1 {
-    margin-right: 160px;
-    margin-bottom: 15px;
+    width: max-content;
+    margin-right: 110px;
+    margin-bottom: 10px;
 }
 
 .intro p1 {
@@ -27,20 +28,25 @@
 
 /*INTRO - ONE THIRD*/
 .content-frame .experience {
+    height: 200px;
     margin-left: 1px;
-    flex: 1 2 320px;
+    flex: 1 1 400px;
+
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 }
 
 .content.experience {
-    margin: 20px 25px 0px;
+    margin: 0px 25px;
     
 } 
 
 .experience h3 {
+    width: max-content;
     margin-right: 40px;
+    margin-bottom: 15px;
     
 } 
 
@@ -48,26 +54,29 @@
     list-style-type: "* ";
     line-height: 25px;
     margin: 0px;
-    padding-left: 15px;
+    padding-left: 20px;
 }
 
 /*FULL CASE*/
-
 .content-frame .case{ 
     height: 600px;
 }
 
+.content.full{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-.row-1, .row-2 {
+.case.full.half {
+    display: none;
+}
+.row-1 {
     display: flex;
     justify-content: space-between;
     margin-left: 90px;
     margin-right: 90px;
 } 
-
-.row-2 {
-    justify-content: right;
-}
 
 .row-1 h2{
     width: max-content;
@@ -80,18 +89,17 @@
     width: 65%;
     word-wrap: break-word;
     text-align: justify;
-
 }
 
 .case-type p3 {
     font-weight: 100;
 }
 
-.row-2 .view-project {
+.view-project {
+    text-align: right;
     padding: 0;
     margin: 0;
-    margin-top: 35px;
-    font-weight: 600;
+    font-weight: 500;
 
 }
 
@@ -100,7 +108,7 @@
     font-style: italic;
 }
 
-.row-3 {
+.row-2{
     display: flex;
     justify-content: center;
     margin-top: 20px;
@@ -108,27 +116,27 @@
 
 .case img {
     width: 650px;
-    height: 350px;
-    /* outline-style: solid;
-    outline-color:  #181818;
-    outline-width: thin; */
-    
+    height: auto;
+
 }
 
 
+
 /*HALF CASE*/
-.content-frame .case.half{ 
+.content-frame .case.half{
+    /* flex-wrap:wrap; */
     width: 500px;
     flex: 1 1 500px;
 }
 
-.content-frame .half.L {
+.content-frame .half.L{
     outline-style: solid;
     outline-color:  #181818;
     outline-width: thin;
 }
 
-.half .content{
+.content.half {
+
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -136,16 +144,16 @@
 }
 
 .case.half h2 {
-    width: max-content;
-    margin-bottom: 15px;
-    /* padding-right: 200px;
-    padding-left: 38px; */
+    width: fit-content;
+    justify-self: center;
+    margin-bottom: 10px;
 }
 
-.case.half .case-type {
+.case.half .case-type{
     width: max-content;
-    padding-left: 0px;
-    /* padding-right: 328px; */
+    justify-self: center;
+    margin: 10px auto;
+
 }
 
 .case.half p3 {
@@ -157,15 +165,14 @@
 
 .case.half .view-project {
     width: max-content;
-    /* margin-left: 300px; */
+    margin: 10px auto;
     padding-bottom: 0;
-    /* margin-bottom: 15px; */
     font-weight: 600;
 }
 
 .case.half img {
     width: 400px;
-    height: 250px;
+    height: auto;
     padding: 0;
     margin: 0;
 }
@@ -303,4 +310,37 @@
 
 .interests li {
     line-height: 25px;
+}
+
+@media screen and (max-width: 820px) {
+
+    .case.half {
+        height: fit-content;
+    }
+
+    .case.full {
+        display: none;
+    }
+
+    .case.full.half {
+        display: flex;
+    }
+
+    .folio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .content-frame .button {
+        flex: 1 1 500px;
+        padding: 25px 0px;
+    }
+
+    .content.contact {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
 }

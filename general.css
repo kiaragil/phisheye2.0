@@ -12,8 +12,8 @@ html {
 
 h1 {
     color: #181818;
-    font-size: 50px;
-    line-height: 50px;
+    font-size: 48px;
+    line-height: 48px;
     font-family: 'Shrikhand', cursive;
     
 }
@@ -27,8 +27,8 @@ h2 {
 
 h3 {
     color: #181818;
-    font-size: 30px;  
-    line-height: 30px;
+    font-size: 32px;  
+    line-height: 32px;
     font-family: 'Shrikhand', cursive;
 }
 
@@ -42,10 +42,10 @@ h4 {
 
 p1 {
     color: #181818;
-    font-size: 24px;  
-    line-height: 28px;
+    font-size: 22px;  
+    line-height: 26px;
     font-family: 'JetBrains Mono', monospace;
-    font-weight: lighter;
+    font-weight: 100;
 
 }
 
@@ -67,15 +67,6 @@ p3 {
     font-weight: lighter;
 
 }
-
-/* p4 {
-    color: #181818;
-    font-size: 14px;
-    line-height: 18px;  
-    font-family: 'JetBrains Mono', monospace;
-    font-weight: lighter;
-
-} */
 
 a {
     color: #181818;
@@ -129,4 +120,43 @@ a {
     outline-color:  #181818;
     outline-width: thin;
     z-index: 10;
+}
+
+
+@media screen and (max-width: 820px) {
+    .section {
+        z-index: 0;
+        width: 100%;
+        margin-top: 15px;
+        box-shadow: none;
+    }
+    
+    .section.top-sec {
+        margin-top:0px;
+    }
+    
+    .top-sec .title-frame {
+        display: none;
+    }
+    
+    
+    .title-frame {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .title-frame h2 {
+        margin: 0;
+        /* padding: 5px 35px; */
+    }
+    
+    .content-frame {
+        width: 100%;
+        margin-top: 1px;
+        display: flex;
+        flex-wrap: wrap;
+        z-index: 10;
+    }
+
+ 
 }
