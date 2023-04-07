@@ -6,22 +6,27 @@ body {
     margin-bottom: 50px;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 h1 {
     color: #181818;
-    font-size: 48px;
-    line-height: 48px;
+    font-size: 45px;
+    line-height: 45px;
     font-family: 'Shrikhand', cursive;
     
 }
 
 h2 {
     color: #181818;
-    font-size: 35px;  
-    line-height: 35px;
+    font-size: 32px;  
+    line-height: 32px;
     font-family: 'Shrikhand', cursive;
 }
 
@@ -42,8 +47,8 @@ h4 {
 
 p1 {
     color: #181818;
-    font-size: 22px;  
-    line-height: 26px;
+    font-size: 20px;  
+    line-height: 25px;
     font-family: 'JetBrains Mono', monospace;
     font-weight: 100;
 
@@ -52,17 +57,8 @@ p1 {
 
 p2 {
     color: #181818;
-    font-size: 18px;
-    line-height: 22px;  
-    font-family: 'JetBrains Mono', monospace;
-    font-weight: lighter;
-
-}
-
-p3 {
-    color: #181818;
     font-size: 16px;
-    line-height: 20px;  
+    line-height: 22px;  
     font-family: 'JetBrains Mono', monospace;
     font-weight: lighter;
 
@@ -92,7 +88,6 @@ a {
 
 .title-frame {
     text-align: left;
-
     width: 100%;
     height: 40px;
     position: relative;
@@ -107,7 +102,8 @@ a {
 
 .title-frame h2 {
     margin: 0;
-    padding: 5px 35px;
+    padding: 5px 32px;
+    width: max-content;
 }
 
 .content-frame {
@@ -122,21 +118,113 @@ a {
     z-index: 10;
 }
 
+@media screen and (max-width: 660px) {
+    .intro p1 {
+        width: 95%;
+        /* text-align: center; */
+    }
 
-@media screen and (max-width: 1130px) {
+}
+@media screen and (max-width: 840px) {
 
-    img {
-        width: 100%;
+    h1 {
+        font-size: 40px;
+        line-height: 35px;
+    }
+    
+    h2 {
+        font-size: 28px;  
+        line-height: 28px;
+    }
+
+    p1 {
+        font-size: 18px;  
+        line-height: 25px;
+    
+    }
+
+    .intro h1, .experience h3{
+        width: max-content;
+        margin: 10px;
+    }
+
+    .content.intro, .content.experience {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .experience h3 {
+            font-size: 25px;  
+            line-height: 25px;
+    }
+
+    .experience ul {
+        width: max-content;
+        padding-left: 13px;
+    }
+
+    .content.experience {
+        margin: unset;
       }
+    /* h1 {
+        font-size: 48px;
+        line-height: 48px;
+    }
+    
+    h2 {
+        font-size: 35px;  
+        line-height: 35px;
+    }
+    
+    h3 {
+        font-size: 32px;  
+        line-height: 32px;
+    }
+    
+    h4 {
+        font-size: 20px;  
+        line-height: 20px;
+    }
+    
+    
+    
+    
+    
+    p2 {
+        font-size: 18px;
+        line-height: 22px; 
+    
+    }
+    
+    p3 {
+        font-size: 16px;
+        line-height: 20px;  
+
+    
+    } */
+
+    .title-frame {
+        text-align: center;
+        width: 100%;
+        height: 30px;
+        position: relative;
+        padding: 10px 0px; /* T R D L */
+        overflow: hidden;
+
+    }
 
     .section {
-        z-index: 0;
+        z-index: 1;
         width:100%;
         margin-top: 15px;
         box-shadow: none;
     }
     
     .section.top-sec {
+        z-index: 1;
         margin-top:0px;
     }
     
@@ -152,7 +240,7 @@ a {
     
     .title-frame h2 {
         margin: 0;
-        /* padding: 5px 35px; */
+        padding: 5px 20px;
     }
     
     .content-frame {
@@ -160,8 +248,9 @@ a {
         margin-top: 1px;
         display: flex;
         flex-wrap: wrap;
-        z-index: 10;
+        z-index: 1;
     }
 
  
 }
+

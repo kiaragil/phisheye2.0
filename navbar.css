@@ -33,6 +33,10 @@
 
 }
 
+.nav .links {
+    padding-right: 30px;
+}
+
 .nav a {
     color: #181818;
     font-family: 'JetBrains Mono', monospace;
@@ -70,7 +74,7 @@
 }
 
 
-@media screen and (max-width: 1130px) {
+@media screen and (max-width: 840px) {
     .nav {
         z-index: 1;
         width: 100%;
@@ -99,7 +103,11 @@
     }
 }
 
-@media screen and (max-width: 1130px) {
+@media screen and (max-width: 840px) {
+
+    .nav .links {
+        padding-right: unset;
+      }
 
     /* .nav.responsive {position: relative; top: 160px;} */
     .nav.responsive .icon {
@@ -128,7 +136,7 @@
         float: none;
         top: 50px;
         text-align: center;
-        z-index: 1;
+        z-index: 0;
     }
 
     .nav.responsive a:hover {

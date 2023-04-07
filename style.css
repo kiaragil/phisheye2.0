@@ -1,7 +1,7 @@
 /*INTRO - TWO THIRD*/
 
 .content-frame .intro {
-    height: max-content;
+    height: auto;
     outline-style: solid;
     outline-color:  #181818;
     outline-width: thin;
@@ -37,9 +37,9 @@
 
 /*INTRO - ONE THIRD*/
 .content-frame .experience {
-    height: 200px;
+    height: auto;
     margin-left: 1px;
-    flex: 1 1 400px;
+    flex: 1 1 40%;
 
     display: flex;
     flex-direction: column;
@@ -52,10 +52,10 @@
     
 } 
 
-.experience h3 {
+/* .experience h3 {
     margin-right: 40px;
     width: max-content;
-} 
+}  */
 
 .experience ul {
     list-style-type: "* ";
@@ -66,7 +66,8 @@
 
 /*FULL CASE*/
 .content-frame .case{ 
-    height: 600px;
+    height: auto;
+    padding-bottom: 15px;
 }
 
 .content.full{
@@ -87,18 +88,18 @@
 
 .row-1 h2{
     width: max-content;
-    flex: 2 1 190px;
+    flex: 2 1 19%;
 }
 
 
-.row-1 p3 {
+.row-1 p2 {
     margin-top: 30px;
     width: 65%;
     word-wrap: break-word;
     text-align: justify;
 }
 
-.case-type p3 {
+.case-type p2 {
     font-weight: 100;
 }
 
@@ -106,7 +107,7 @@
     text-align: right;
     padding: 0;
     margin: 0;
-    font-weight: 500;
+    font-weight: 400;
 
 }
 
@@ -132,11 +133,12 @@
 /*HALF CASE*/
 .content-frame .case.half{
     /* flex-wrap:wrap; */
-    width: 500px;
-    flex: 1 1 500px;
+    /* height: auto; */
+    flex: 1 1 50%;
 }
 
-.content-frame .half.L{
+.content-frame .half.R{
+    height: auto;
     outline-style: solid;
     outline-color:  #181818;
     outline-width: thin;
@@ -163,7 +165,7 @@
 
 }
 
-.case.half p3 {
+.case.half p2 {
     display: block;
     text-align: justify;
     margin: 0;
@@ -199,7 +201,7 @@
 }
 
 .content-frame .button {
-    flex: 1 1 500px;
+    flex: 1 1 50%;
     padding: 50px 0px;
 }
 
@@ -227,7 +229,6 @@
     width: 100%;
     justify-content: center;
     margin: 30px 0px;
-
 }
 
 .contact a {
@@ -275,7 +276,7 @@
     margin-right: 240px;
 }
 
-.content.about p3 {
+.content.about p2 {
     margin: 10px 30px;
     text-align: justify;
 
@@ -286,14 +287,14 @@
 
 .content-frame .interests {
     height: 750px;
-    flex: 1 1 500px;
+    flex: 1 1 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     /* align-items: center; */
 }
 
-.content.interests p3 {
+.content.interests p2 {
     padding: 0;
     margin: 0;
 }
@@ -319,10 +320,14 @@
     line-height: 25px;
 }
 
-@media screen and (max-width: 1130px) {
+@media screen and (max-width: 840px) {
 
-    .case.half {
+    .content.case.half {
         height: fit-content;
+        display: flex;
+        justify-content: column;
+        text-align: center;
+        width: 100%;
     }
 
     .case.full {
@@ -334,7 +339,6 @@
     }
 
     .folio {
-        display: flex;
         flex-direction: column;
         justify-content: center;
     }
@@ -346,8 +350,20 @@
 
     .content.contact {
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        margin: unset;
+        width: 100%;
+        margin-top: -1px;
+        text-align: center;
+    }
+
+    .contact p1 {
+        width:100%;
+        outline-style: solid;
+        outline-color:  #181818;
+        outline-width: thin;
+        padding: 15px 0;
+        margin-top: 1px;
+    
     }
 
 }
