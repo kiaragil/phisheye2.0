@@ -7,24 +7,33 @@
     outline-width: thin;
     flex: 1 1 600px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
+.content.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+}
+
 
 .intro h1 {
-    width: max-content;
-    margin-right: 110px;
-    margin-bottom: 10px;
+
 }
 
 .intro p1 {
-    margin: 50px;
+    /* padding: 15px; */
+    width: 80%;
     margin-top: 0px;
     text-align: justify;
     
 }
+
 
 /*INTRO - ONE THIRD*/
 .content-frame .experience {
@@ -44,17 +53,15 @@
 } 
 
 .experience h3 {
-    width: max-content;
     margin-right: 40px;
-    margin-bottom: 15px;
-    
+    width: max-content;
 } 
 
 .experience ul {
     list-style-type: "* ";
     line-height: 25px;
     margin: 0px;
-    padding-left: 20px;
+    padding-left: 15px;
 }
 
 /*FULL CASE*/
@@ -255,7 +262,7 @@
 .content.about img {
     margin-top: 15px;
     width: 350px;
-    height: 350px;
+    height: auto;
     outline-style: solid;
     outline-color:  #181818;
     outline-width: thin;
@@ -312,7 +319,7 @@
     line-height: 25px;
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 1130px) {
 
     .case.half {
         height: fit-content;
@@ -333,7 +340,7 @@
     }
 
     .content-frame .button {
-        flex: 1 1 500px;
+        flex: unset;
         padding: 25px 0px;
     }
 
