@@ -109,6 +109,7 @@
 .view-project :hover {
     text-decoration: none;
     font-style: italic;
+    font-weight: 500;
 }
 
 .row-2{
@@ -209,7 +210,7 @@
 
 .button a:hover {
     font-style: italic;
-
+    font-weight: 400;
     -webkit-transition: background 0.3s linear;
     -moz-transition: background 0.3s linear;
     -ms-transition: background 0.3s linear;
@@ -233,6 +234,7 @@
 .contact a:hover {
     text-decoration: none;
     font-style: italic;
+    font-weight: 400;
 
     -webkit-transition: background 0.3s linear;
     -moz-transition: background 0.3s linear;
@@ -244,11 +246,12 @@
 /*ABOUT */
 
 .content-frame .about {
-    height: 800px;
+    height: auto;
+    padding: 35px 40px;
     outline-style: solid;
     outline-color:  #181818;
     outline-width: thin;
-    flex: 1 1 500px;
+    flex: 1 1 45%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -256,8 +259,9 @@
 }
 
 .content.about img {
+    align-self: center;
     margin-top: 15px;
-    width: 350px;
+    width: 300px;
     height: auto;
     outline-style: solid;
     outline-color:  #181818;
@@ -267,22 +271,21 @@
 
 
 .content.about h2 {
-    margin: 0;
-    margin-right: 240px;
+    margin-left: 5px;
+    margin-bottom: 15px;
 }
 
 .content.about p2 {
-    margin: 10px 30px;
     text-align: justify;
-
 }
 
 
 /*INTERESTS */
 
 .content-frame .interests {
-    height: 750px;
-    flex: 1 1 50%;
+    height: auto;
+    flex: 1 1 55%;
+    padding: 35px 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -295,6 +298,7 @@
 }
 
 .content.interests h4 {
+    width: max-content;
     margin: 0;
     padding: 12px 60px;
     padding-right: 200px;
@@ -336,6 +340,47 @@
     .folio {
         flex-direction: column;
         justify-content: center;
+    }
+
+    .intro h1, .experience h3{
+        width: max-content;
+        margin: 10px;
+    }
+
+    .content.intro, .content.experience {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .experience h3 {
+            font-size: 25px;  
+            line-height: 25px;
+    }
+
+    .experience ul {
+        width: max-content;
+        padding-left: 13px;
+    }
+
+    .content.experience {
+        margin: unset;
+    }
+
+    .content.interests h4 {
+        width: max-content;
+        margin: 0;
+        padding: unset;
+        padding-right: 200px;
+    
+    }
+
+    .content.interests ul {
+        line-height: 18px;
+        padding: 15px 10px 15px 25px;
+    
     }
 
     .content-frame .button {
