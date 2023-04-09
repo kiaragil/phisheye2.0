@@ -74,7 +74,7 @@
         float: left;
         display: block;
         position: absolute;
-        left: 0;
+        left: -10px;
     }
 
     .nav a {display: none;}
@@ -107,22 +107,21 @@
 
     .nav.responsive #logo {
         position: absolute;
-        left: -8px;
+        /* left: -8px; */
         top: 0;
     }
 
     .nav.responsive {
         display: flex;
-        height: 30%;
+        height: 100%;
         flex-direction: column;
+        justify-content: start;
         position: fixed;
         padding-top: 198px;
         z-index: 3;
     }
 
-    .nav.responsive .links {
-        margin-bottom: 55px;
-    }
+
     
 
     .nav.responsive a {
@@ -136,5 +135,6 @@
     .nav.responsive a:hover {
         outline-style: none;
         background-color: transparent;
+        font-weight: 500;
     }
 }
