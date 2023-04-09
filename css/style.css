@@ -34,7 +34,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    margin: 0px 25px;
+    margin: 10px 25px;
     
 }
 
@@ -246,6 +246,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: start;
+    padding-left: 40px;
 }
 
 .content.interests p2 {
@@ -256,17 +258,13 @@
 .content.interests h4 {
     width: max-content;
     margin: 0;
-    padding: 12px 60px;
-    padding-right: 200px;
+    padding: 12px 0px;
 
 }
 
 .content.interests ul {
     list-style-type: "* ";
     line-height: 20px;
-    padding: 0;
-    padding-left:80px;
-    padding-right: 20px;
     margin: 0;
 
 }
