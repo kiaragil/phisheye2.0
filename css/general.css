@@ -171,6 +171,7 @@ a:hover {
     }
 
     .title-frame {
+        background-color: #7ac48b;
         text-align: center;
         height: 30px;
 
@@ -179,7 +180,7 @@ a:hover {
     .section {
         z-index: 1;
         width:100%;
-        margin-top: 10px;
+        margin-top: 35px;
         box-shadow: none;
     }
     
@@ -200,6 +201,7 @@ a:hover {
     
     .content-frame {
         width: 100%;
+        background-color: #e3ceaa;
         margin-top: 1px;
         display: flex;
         flex-wrap: wrap;
