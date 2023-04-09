@@ -77,7 +77,7 @@ a {
 }
 
 .section.top-sec {
-    margin-top:0px;
+    margin-top: 0px;
 }
 
 .top-sec .title-frame {
@@ -115,7 +115,7 @@ a {
     outline-style: solid;
     outline-color:  #181818;
     outline-width: thin;
-    z-index: 10;
+    z-index: 1;
 }
 
 a:hover {
@@ -137,6 +137,10 @@ a:hover {
 
 }
 @media screen and (max-width: 840px) {
+
+    body {
+       margin: 1px;
+    }
 
     h1 {
         font-size: 36px;
@@ -175,13 +179,13 @@ a:hover {
     .section {
         z-index: 1;
         width:100%;
-        margin-top: 15px;
+        margin-top: 10px;
         box-shadow: none;
     }
     
     .section.top-sec {
         z-index: 1;
-        margin-top:0px;
+        margin-top: 60px;
     }
     
     .title-frame {
