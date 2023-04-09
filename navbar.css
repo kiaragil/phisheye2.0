@@ -53,22 +53,6 @@
     transition: background 0.3s linear;
 }
 
-
-.nav a:hover {
-    outline-style: solid;
-    outline-color:  #181818;
-    outline-width: thin;
-    background-color: #F3E7D2;
-    padding: 18px 20px;
-}
-
-/* .navbar a.active {
-    outline-style: solid;
-    outline-color:  #181818;
-    outline-width: thin;
-    background-color: #F3E7D2;
-} */
-
 .nav .icon {
     display: none;
 }
