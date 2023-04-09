@@ -2,7 +2,7 @@
 
 .content-frame .intro {
     outline-style: solid;
-    outline-color:  #181818;
+    outline-color:  #1b1b1b;
     outline-width: thin;
     flex: 1 1 60%;
     display: flex;
@@ -35,6 +35,7 @@
     justify-content: center;
     align-items: start;
     margin: 0px 25px;
+    
 }
 
 
@@ -115,7 +116,7 @@
 
 .content-frame .half.R{
     outline-style: solid;
-    outline-color:  #181818;
+    outline-color:  #1b1b1b;
     outline-width: thin;
     
 }
@@ -182,7 +183,7 @@
 
 .content-frame .button.L {
     outline-style: solid;
-    outline-color:  #181818;
+    outline-color:  #1b1b1b;
     outline-width: thin;
 }
 
@@ -207,7 +208,7 @@
 .content-frame .about {
     padding: 35px 40px;
     outline-style: solid;
-    outline-color:  #181818;
+    outline-color:  #1b1b1b;
     outline-width: thin;
     flex: 1 1 45%;
     display: flex;
@@ -221,7 +222,7 @@
     margin-top: 15px;
     width: 300px;
     outline-style: solid;
-    outline-color:  #181818;
+    outline-color:  #1b1b1b;
     outline-width: thin;
     
 }
@@ -354,7 +355,7 @@
     .contact p1 {
         width:100%;
         outline-style: solid;
-        outline-color:  #181818;
+        outline-color:  #1b1b1b;
         outline-width: thin;
         padding: 15px 0;
         margin-top: 1px;

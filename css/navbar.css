@@ -1,6 +1,6 @@
 #logo {
     padding: 10px 30px;
-    color: #181818;
+    color: #1b1b1b;
     font-size: 30px;
     font-family: 'Shrikhand', cursive;
     text-decoration: none;
@@ -26,10 +26,11 @@
 
     background-color: #A7DCC1;
     outline-style: solid;
-    outline-color:  #181818;
+    outline-color:  #1b1b1b;
     outline-width: thin;
     
     box-shadow: 22px 22px #181818;
+    
 
 }
 
@@ -83,10 +84,12 @@
         display: block;
     }
 
-    .nav a:hover {
+    #logo:hover, .icon:hover {
+        font-style: unset;
         outline-style: none;
         background-color: transparent;
     }
+
 }
 
 @media screen and (max-width: 840px) {
@@ -110,10 +113,15 @@
 
     .nav.responsive {
         display: flex;
+        height: 30%;
         flex-direction: column;
-        position: relative;
+        position: fixed;
         padding-top: 198px;
         z-index: 3;
+    }
+
+    .nav.responsive .links {
+        margin-bottom: 55px;
     }
     
 
