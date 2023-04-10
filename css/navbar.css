@@ -17,9 +17,9 @@
     text-decoration: none;
 } 
 
-.nav.home {
+/* .nav.home {
     margin-top: 125px;
-}
+} */
 
 .nav {
     display: flex;
@@ -34,10 +34,7 @@
     outline-color:  #1b1b1b;
     outline-width: thin;
     
-    box-shadow: 22px 22px #1b1b1b;
-
-    
-
+    box-shadow: 15px 15px #1b1b1b;
 }
 
 .nav .links {

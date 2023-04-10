@@ -1,3 +1,9 @@
+section {
+    min-height: 100vh;
+    margin-top: 125px;
+    z-index: 10;
+}
+
 /*INTRO - TWO THIRD*/
 
 .content-frame .intro {
@@ -277,6 +283,12 @@
 }
 
 @media screen and (max-width: 840px) {
+
+    section {
+        min-height: 100vh;
+        margin-top: unset;
+        z-index: 10;
+    }
 
     .content.case.half {
         height: fit-content;
