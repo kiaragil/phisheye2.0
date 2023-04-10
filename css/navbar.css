@@ -19,7 +19,7 @@
     margin-left: auto;
     margin-right: auto;
 
-    background-color: #A7DCC1;
+    background-color: #a4cd8e;
     outline-style: solid;
     outline-color:  #1b1b1b;
     outline-width: thin;
@@ -62,7 +62,7 @@
 
 @media screen and (max-width: 840px) {
     .nav {
-        background-color: #91cd9f;
+
         width: 99.5%;
         position: fixed;
         z-index: 2;
@@ -100,6 +100,7 @@
     /* .nav.responsive {position: relative; top: 160px;} */
     .nav.responsive .icon {
         position: fixed;
+        font-size: 20px;
         right: 7px;
         top: 1px;
     }

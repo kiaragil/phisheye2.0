@@ -1,6 +1,5 @@
 body {
     color: #1b1b1b;
-    background-color: #F6D085;
     display: flex;
     flex-direction: column;
     margin-top: 25px;
@@ -16,32 +15,34 @@ html {
     scroll-behavior: smooth;
 }
 
+h1, h2, h3, h4 {
+    font-family: 'Shrikhand', cursive;
+}
+
 h1 {
     font-size: 45px;
     line-height: 45px;
-    font-family: 'Shrikhand', cursive;
     
 }
 
 h2 {
     font-size: 32px;  
     line-height: 32px;
-    font-family: 'Shrikhand', cursive;
 }
 
 h3 {
     font-size: 32px;  
     line-height: 32px;
-    font-family: 'Shrikhand', cursive;
+
 }
 
 h4 {
     font-size: 24px;  
     line-height: 24px;
-    font-family: 'Shrikhand', cursive;
+
 }
 
-p {
+p1, p2 {
     font-family: 'JetBrains Mono', monospace;
 }
 
@@ -49,7 +50,6 @@ p {
 p1 {
     font-size: 20px;  
     line-height: 25px;
-    font-family: 'JetBrains Mono', monospace;
     font-weight: 100;
 
 }
@@ -58,7 +58,6 @@ p1 {
 p2 {
     font-size: 16px;
     line-height: 22px;  
-    font-family: 'JetBrains Mono', monospace;
     font-weight: lighter;
 
 }
@@ -93,7 +92,7 @@ a {
     padding: 10px 0px; /* T R D L */
     overflow: hidden;
     
-    background-color: #A7DCC1;
+    background-color: #a4cd8e;
     outline-style: solid;
     outline-color:  #1b1b1b;
     outline-width: thin;
@@ -111,7 +110,7 @@ a {
     margin-top: 1px;
     display: flex;
     flex-wrap: nowrap;
-    background-color: #F3E7D2;
+    background-color: #e0d9be;
     outline-style: solid;
     outline-color:  #1b1b1b;
     outline-width: thin;
@@ -132,7 +131,6 @@ a:hover {
 @media screen and (max-width: 660px) {
     .intro p1 {
         width: 95%;
-        /* text-align: center; */
     }
 
 }
@@ -171,7 +169,6 @@ a:hover {
     }
 
     .title-frame {
-        background-color: #91cd9f;
         text-align: center;
         height: 30px;
 
@@ -201,7 +198,6 @@ a:hover {
     
     .content-frame {
         width: 100%;
-        background-color: #e3ceaa;
         margin-top: 1px;
         display: flex;
         flex-wrap: wrap;
