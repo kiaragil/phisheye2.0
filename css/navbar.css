@@ -1,20 +1,30 @@
 #logo {
+    display: inline-flex;
     padding: 10px 30px;
     color: #1b1b1b;
-    font-size: 30px;
-    font-family: 'Shrikhand', cursive;
+    font-size: 35px;
+    font-family: 'Unbounded', cursive;
+    font-weight: 500;
     text-decoration: none;
     z-index: 3;
+}
+
+#logo .lighter {
+    font-weight: 300;
 }
 
 #logo a { 
     text-decoration: none;
 } 
 
+.nav.home {
+    margin-top: 125px;
+}
+
 .nav {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 90%;
     height: 60px;
     margin-left: auto;
     margin-right: auto;
@@ -40,7 +50,7 @@
     font-weight: lighter;
     font-size: 22px;
     display: inline-block;
-    margin-right: -4p;  
+    margin-right: -4px;  
     padding: 18px 20px;
 
     -webkit-transition: background 0.3s linear;
@@ -61,8 +71,12 @@
 }
 
 @media screen and (max-width: 840px) {
-    .nav {
+    
+    .nav.home {
+        margin-top: unset;
+    }
 
+    .nav {
         width: 99.5%;
         position: fixed;
         z-index: 2;
@@ -72,10 +86,9 @@
         justify-content: end;
     }
 
-    .nav #logo {
+    #logo {
         font-size: 25px;
         float: left;
-        display: block;
         position: absolute;
         top: 5px;
         left: -10px;
@@ -84,6 +97,10 @@
     .nav a {display: none;}
     
     .nav .icon {
+        /* position: absolute; */
+        padding-top: 12px;
+        padding-right: 28px;
+        font-size: 28px;
         width: 30px;
         float: right;
         display: block;
@@ -100,7 +117,6 @@
     /* .nav.responsive {position: relative; top: 160px;} */
     .nav.responsive .icon {
         position: fixed;
-        font-size: 20px;
         right: 7px;
         top: 1px;
     }

@@ -10,13 +10,15 @@
     justify-content: center;
     align-items: start;
 
-    padding: 55px 0px 55px 40px;
+    padding: 100px 0px 100px 40px;
    
 }
 
 .intro h1 {
+    width: max-content;
     margin-top: 15px;
     margin-bottom: 15px;
+    /* font-style: italic; */
 }
 
 .intro p1 {
@@ -40,15 +42,16 @@
 
 
 .experience h3 {
+    margin-top: 0;
     margin-bottom: 15px;
     width: max-content;
 } 
 
 .experience ul {
     list-style-type: "* ";
-    line-height: 25px;
+    line-height: 30px;
     margin: 0px;
-    padding-left: 15px;
+    padding-left: 20x;
 }
 
 /*FULL CASE*/
@@ -78,13 +81,13 @@
 }
 
 
-.row-1 p2 {
+.row-1 p3 {
     margin-top: 30px;
     width: 65%;
     word-wrap: break-word;
     text-align: justify;
 }
-.case-type p2 {
+.case-type p3 {
     font-weight: 100;
 }
 
@@ -141,7 +144,7 @@
 
 }
 
-.case.half p2 {
+.case.half p3 {
     display: block;
     text-align: justify;
     margin: 0;
