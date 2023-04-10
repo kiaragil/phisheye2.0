@@ -61,7 +61,7 @@ section {
 }
 
 /*FULL CASE*/
-.content-frame .case{ 
+/* .content-frame .case{ 
     padding-bottom: 20px;
 }
 
@@ -109,7 +109,7 @@ section {
     width: 650px;
     height: auto;
 
-}
+} */
 
 /*HALF CASE*/
 .content-frame .case.half{
@@ -291,10 +291,6 @@ section {
         text-align: center;
         width: 100%;
     }
-
-    /* .case.full {
-        display: none;
-    } */
 
     .case.full.half {
         display: flex;

@@ -1,11 +1,14 @@
 function toggle() {
     var x = document.getElementById("navbar");
-    console.log(x);
+    
     if (x.className === "nav") {
         x.className += " responsive";
-    } else {
+    }
+    else {
         x.className = "nav";
     }
+
+    
 }
 
 function randomBGColor() {
@@ -20,75 +23,35 @@ function randomBGColor() {
 
 
 function mobileFormat() {
-    var x = document.getElementById("mobilecase1");
-    var y = document.getElementById("mobilecase2");
-    
+    var z = document.getElementById("navbar")
 
     if (window.innerWidth < 840) {
 
-        x.outerHTML = `
-        <div id="mobilecase1" class="content case half">
-            <h2>S.U.N.N.</h2>
-            <div class="case-type"><p3>WEB DEV</p3></div>
-            <p3>
-            S.U.N.N. is a San Francisco organization dedicated 
-            to empowering residents through garden education and food literacy.
-            I was approached me to develop and launch a website that was informative 
-            and accesible. I also helped develop their logo that appears throughout 
-            the site itself.
-            <div class="view-project"><a href="https://sunnsf.org/">VIEW SITE</a></div>
-            </p3>                           
-            <img src="media/sunnsforg-case.png">
-        </div>`;
-
-        y.outerHTML = 
-        `<div id="mobilecase2" class="content case half">
-            <h2>Hoply</h2>
-            <div class="case-type"><p3>WEB DEV</p3></div>
-            <p3>
-            Hoply is a project made to practice
-            CRUD operations. It is is a very simple text-based social media. Users were able to create an
-            account and then make, edit, react to- posts. I developed the app on Android studio with Java and SQL.
-            <div class="view-project"><a href="https://github.com/kiaragil/HoplyApp">VIEW PROJECT</a></div>
-            </p3>                    
-            <img src="media/hoply-case.png">
-        </div>`;  
+        z.outerHTML =
+        `<div class="nav" id="navbar">
+            <a href="/" id="logo" title="logo">phish<div class="lighter">eye</div></a> 
+            <div class="links">
+            <a href="about" title="about">about</a>
+            <a href="#works" title="works">works</a>
+            <a href="#contact" title="contact">contact</a>
+            <a href="javascript:void(0);" title="Menu" class="icon" onclick="toggle()">&#9776;</a>
+            </div>
+        </div>
+        `
     }
 
     else {
-        x.outerHTML = 
-        `<div id="mobilecase1" class="content case full">
-            <div class="row-1">
-                <h2>S.U.N.N.
-                    <div class="case-type"><p3>WEB DEV</p3></div>
-                </h2>
-                <p3>
-                    S.U.N.N. is a San Francisco organization dedicated 
-                    to empowering residents through garden education and food literacy.
-                    I was approached me to develop and launch a website that was informative 
-                    and accesible. I also helped develop their logo that appears throughout 
-                    the site itself.
-                    <div class="view-project"><a href="https://sunnsf.org/">VIEW SITE</a></div>
-                </p3>                           
-                </div>
-            <img src="media/sunnsforg-case.png">
-        </div>`
 
-        y.outerHTML = 
-        `<div id="mobilecase2" class="content case full">
-            <div class="row-1">
-                <h2>
-                Hoply
-                <div class="case-type"><p3>SOFTWARE DEV/WEB DEV</p3></div>
-                </h2>
-                <p3>Hoply is a project made to practice
-                    CRUD operations. It is is a very simple text-based social media. Users were able to create an
-                    account and then make, edit, react to- posts. I developed the app on Android studio with Java and SQL.
-                    <div class="view-project"><a href="https://github.com/kiaragil/HoplyApp">VIEW PROJECT</a></div>
-                </p3>                      
-            </div>
-            <img src="media/hoply-case.png">
-        </div>`
+        z.outerHTML = 
+        `<div class="nav home" id="navbar">
+                <a href="/" id="logo" title="logo">phish<div class="lighter">eye</div></a> 
+                <div class="links">
+                <a href="about" title="about">about</a>
+                <a href="#works" title="works">works</a>
+                <a href="#contact" title="contact">contact</a>
+                <a href="javascript:void(0);" title="Menu" class="icon" onclick="toggle()">&#9776;</a>
+                </div>
+            </div>`
     }
 
 }
