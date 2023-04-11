@@ -5,6 +5,7 @@ body {
     flex-direction: column;
     padding-bottom: 125px;
     overflow: scroll;
+    scroll-snap-type: mandatory;
 }
 
 img {
