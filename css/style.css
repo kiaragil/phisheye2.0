@@ -408,8 +408,4 @@ section {
         100%   { transform: translate(0, -0px); }   
     }
 
-    .section#works {
-        scroll-snap-align: start;
-    }
-
 }

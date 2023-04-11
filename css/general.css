@@ -146,7 +146,6 @@ a:hover {
 
     body {
        margin: 1px;
-       scroll-snap-type: y mandatory;
     }
 
     h1 {
