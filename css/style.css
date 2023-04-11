@@ -3,7 +3,7 @@
 }
 
 
-section {
+#landing {
     min-height: 100vh;
     margin-top: 125px;
     z-index: 10;
@@ -235,9 +235,7 @@ section {
     outline-style: solid;
     outline-color:  #1b1b1b;
     outline-width: thin;
-    
 }
-
 
 .content.about h2 {
     margin-left: 5px;
@@ -286,8 +284,8 @@ section {
 
 @media screen and (max-width: 840px) {
 
-    section {
-        min-height: 100vh;
+    #landing {
+        max-height: 100vh;
         margin-top: unset;
         z-index: 10;
     }
