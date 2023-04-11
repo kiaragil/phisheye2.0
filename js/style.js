@@ -115,5 +115,5 @@ function openPage(pageName,elmnt,color) {
     document.getElementById(pageName).style.boxShadow = "0px 10px #1b1b1b;"
   }
   
-  // Get the element with id="defaultOpen" and click on it
-  document.getElementById("defaultOpen").click();
+//   // Get the element with id="defaultOpen" and click on it
+//   document.getElementById("defaultOpen").click();
