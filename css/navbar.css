@@ -6,7 +6,7 @@
     font-family: 'Unbounded', cursive;
     font-weight: 500;
     text-decoration: none;
-    z-index: 3;
+    z-index: 5;
 }
 
 #logo .lighter {
