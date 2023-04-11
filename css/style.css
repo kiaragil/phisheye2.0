@@ -1,6 +1,4 @@
-.fa-solid.fa-arrow-down {
-    display: none;
-}
+.fa-solid.fa-arrow-down { display: none; }
 
 
 #landing {
@@ -24,7 +22,7 @@
     justify-content: center;
     align-items: start;
 
-    padding: 100px 0px 100px 40px;
+    padding: 100px 0px 100px 60px;
    
 }
 
@@ -32,11 +30,10 @@
     width: max-content;
     margin-top: 15px;
     margin-bottom: 15px;
-    /* font-style: italic; */
 }
 
 .intro p1 {
-    width: 80%;
+    width: 85%;
     text-align: justify;
 }
 
@@ -68,6 +65,7 @@
     padding-left: 20x;
 }
 
+/*CASES*/
 /*FULL CASE
 .content-frame .case{ 
     padding-bottom: 20px;
@@ -119,17 +117,64 @@
 
 } */
 
-/*HALF CASE*/
-.content-frame .case.half{
-    flex: 1 1 50%;
-    
+
+
+/* TABS */
+.tabs {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
-.content-frame .half.R{
+.tablink {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: #a19d8c;
+    float: left;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    padding: 20px 15px;
+    font-size: 18px;
+    width: 50%;
+    position: relative;
+    z-index: 4;
+}
+
+.tablink:hover {
+    font-style: italic;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.tabcontent {
+    display: none;
+    height: 100%;
+}
+
+.buttons {
+    display: flex;
+    position: relative;
+    z-index: 4;
+}
+
+
+#technical {background-color: #e0d9be;}
+
+#creative {background-color: #e0d9be;}
+
+
+.row-1, .row-2 { display: flex; } 
+
+
+.case.half{
+    flex: 1 1 50px;
+    padding-bottom: 35px;
     outline-style: solid;
-    outline-color:  #1b1b1b;
+    outline-color:  #c9c3aa;
     outline-width: thin;
-    
+     
 }
 
 .content.half {
@@ -182,10 +227,7 @@
     width: 100%;
 }
 
-.button p1 {
-    width: max-content;
-
-}
+.button p1 { width: max-content;}
 
 .content-frame .button {
     flex: 1 1 50%;
@@ -209,9 +251,7 @@
     margin: 30px 0px;
 }
 
-.contact a {
-    padding: 0px 15px;
-}
+.contact a { padding: 0px 15px;}
 
 
 /*ABOUT */
@@ -242,9 +282,7 @@
     margin-bottom: 15px;
 }
 
-.content.about p2 {
-    text-align: justify;
-}
+.content.about p2 { text-align: justify; }
 
 
 /*INTERESTS */
@@ -278,9 +316,7 @@
 
 }
 
-.interests li {
-    line-height: 25px;
-}
+.interests li { line-height: 25px; }
 
 @media screen and (max-width: 840px) {
 
@@ -298,9 +334,7 @@
         width: 100%;
     }
 
-    .case.full.half {
-        display: flex;
-    }
+    .case.full.half { display: flex;}
 
     .folio {
         flex-direction: column;
@@ -321,9 +355,7 @@
         align-items: center;
     }
 
-    .content-frame .intro{
-        outline-style: unset;
-    }
+    .content-frame .intro{ outline-style: unset;}
 
     .content-frame#intro {
         margin-top: 10vh;

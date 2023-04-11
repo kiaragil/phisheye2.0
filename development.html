@@ -24,200 +24,202 @@
 
     <body class="change" onload=" document.getElementById('defaultOpen').click(); mobileFormat(); return randomBGColor();">
 
-            <div id="landing">
-                <div class="nav" id="navbar">
-                    <a href="/" id="logo" title="logo">phish<div class="lighter">eye</div></a> 
-                    <div class="links">
-                    <a href="about" title="about">about</a>
-                    <a href="#works" title="works">works</a>
-                    <a href="#contact" title="contact">contact</a>
-                    <a href="javascript:void(0);" title="Menu" class="icon" onclick="toggle()"><i class="fa-solid fa-bars"></i></a>
-                    </div>
+        <!-- landing -->
+        <div id="landing">
+            <!-- nav -->
+            <div class="nav" id="navbar">
+                <a href="/" id="logo" title="logo">phish<div class="lighter">eye</div></a> 
+                <div class="links">
+                <a href="about" title="about">about</a>
+                <a href="#works" title="works">works</a>
+                <a href="#contact" title="contact">contact</a>
+                <a href="javascript:void(0);" title="Menu" class="icon" onclick="toggle()"><i class="fa-solid fa-bars"></i></a>
                 </div>
-                <!-- intro -->
-                <div class="top-sec section index">
-                <div class="title-frame"><h2>Intro</h2></div>
-                    <div id="intro" class="content-frame">
-                        <div class="content intro">
-                                <h1>Hi, I'm Kiara!</h1>
-                                <p1>I’m on a mission to find the intersection of my artistic pursuits and technical skills.</p1>
-                        </div>
-                        <div class="content experience">
-                                <h3>I have experience in:</h3>
-                                <p2>
-                                    <ul>
-                                        <li>full-stack web development.</li>
-                                        <li>software engineering.</li>
-                                        <li>graphic design.</li>
-                                        <li>photography.</li>
-                                    </ul>   
-                                </p2>
-                        </div>
-
-                    </div>
-                </div>
-                <i class="fa-solid fa-arrow-down floating"></i>
             </div>
 
-            <!-- case studys -->
-            <div id="works" class="section works">
-            <div class="title-frame"><h2>works</h2></div>
-                
-                <div class="tabs">
+            <!-- intro -->
+            <div class="top-sec section index">
+            <div class="title-frame"><h2>Intro</h2></div>
+            <div id="intro" class="content-frame">
+                <div class="content intro">
+                    <h1>Hi, I'm Kiara!</h1>
+                    <p1>I’m on a mission to find the intersection of my artistic pursuits and technical skills.</p1>
+                </div>
+                <div class="content experience">
+                    <h3>I have experience in:</h3>
+                    <p2>
+                        <ul>
+                        <li>full-stack web development.</li>
+                        <li>software engineering.</li>
+                        <li>graphic design.</li>
+                        <li>photography.</li>
+                        </ul>   
+                    </p2>
+                </div>
 
-                <div class="buttons">
+            </div>
+            </div>
+            <i class="fa-solid fa-arrow-down floating"></i>
+        </div>
+
+        <!-- case studys -->
+        <div id="works" class="section works">
+        <div class="title-frame"><h2>works</h2></div>
+            
+            <div class="tabs content-frame">
+
+            <div class="buttons">
                 <div class="tablink L" onclick="openPage('technical', this, '#e0d9be')" id="defaultOpen">technical</div>
                 <div class="tablink R" onclick="openPage('creative', this, '#e0d9be')">creative</div>
-                </div>
-
-
-                <div id="technical" class="tabcontent">
-                    <div class="content-frame">
-                        <div class="content case half L" >
-                            <h2>S.U.N.N.</h2>
-                            <div class="case-type"><p3>WEB DEV</p3></div>
-                            <p3>
-                            S.U.N.N. is a San Francisco organization dedicated 
-                            to empowering residents through garden education and food literacy.
-                            I was approached me to develop and launch a website that was informative 
-                            and accesible. I also helped develop their logo that appears throughout 
-                            the site itself.
-                            <div class="view-project"><a href="https://sunnsf.org/">VIEW SITE</a></div>
-                            </p3>                           
-                            <img src="media/sunnsforg-case.png">
-                        </div>
-    
-                        <div class="content case half R">
-                            <h2>phisheye 1.0</h2>
-                            <div class="case-type"><p3>WEB DEV</p3></div>
-                            <p3>The first iteration of phisheye is a site I 
-                            created to showcase my photography. I used inpsiration from tumblr themes for the format.
-                            This site brought me some paid photography work! I am in the process of launching a second, 
-                            updated version.
-                            <div class="view-project"><a href="https://github.com/kiaragil/csc648-848-sw-engineering-SU21-T04">VIEW SITE</a></div>
-                            </p3>
-                            <img src="media/phisheyev1-case.png">
-                        </div>
-    
-                    </div>
-    
-                    <div class="content-frame">
-                        <div class="content case half L">
-                            <h2>UniTea</h2>
-                            <div class="case-type"><p3>SOFTWARE DEV/WEB DEV</p3></div>
-                            <p3>UniTea is a web app developed for a final group project. It's purpose was to promote university
-                            study groups in a post-COVID setting. Users could make accounts, make and interact with posts,
-                            and even customize their profile. I acted as a member of the back-end team and as project lead. 
-                            It was hosted using AWS EC2.
-                            <div class="view-project"><a href="https://github.com/kiaragil/unitea">VIEW PROJECT</a></div>
-                            </p3>
-                            <img src="media/unitea-casesmaller.png">
-                        </div>
-    
-                        <div class="content case half R">
-                            <h2>Hoply</h2>
-                            <div class="case-type"><p3>SOFTWARE DEV/WEB DEV</p3></div>
-                            <p3>
-                            Hoply is a project made to practice
-                            CRUD operations. It is is a very simple text-based social media. Users were able to create an
-                            account and then make, edit, react to- posts. I developed the app on Android studio with Java and SQL.
-                            <div class="view-project"><a href="https://github.com/kiaragil/HoplyApp">VIEW PROJECT</a></div>
-                            </p3>                    
-                            <img src="media/hoply-case.png">
-                        </div>
-    
-                    </div>
-                </div>
-
-                <div id="creative" class="tabcontent">
-                    <div class="content-frame">
-                        <div class="content case half L" >
-                            <h2>CASE TITLE</h2>
-                            <div class="case-type"><p3>CASE TYPE</p3></div>
-                            <p3>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna
-                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                            <div class="view-project"><a href="">VIEW SITE</a></div>
-                            </p3>                           
-                            <img src="media/test400x325.png">
-                        </div>
-    
-                        <div class="content case half R">
-                            <h2>CASE TITLE</h2>
-                            <div class="case-type"><p3>CASE TYPE</p3></div>
-                            <p3>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna
-                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                            <div class="view-project"><a href="">VIEW SITE</a></div>
-                            </p3>                           
-                            <img src="media/test400x325.png">
-                        </div>
-    
-                    </div>
-    
-                    <div class="content-frame">
-                        <div class="content case half L">
-                            <h2>CASE TITLE</h2>
-                            <div class="case-type"><p3>CASE TYPE</p3></div>
-                            <p3>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna
-                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                            <div class="view-project"><a href="">VIEW SITE</a></div>
-                            </p3>                           
-                            <img src="media/test400x325.png">
-                        </div>
-    
-                        <div class="content case half R">
-                            <h2>CASE TITLE</h2>
-                            <div class="case-type"><p3>CASE TYPE</p3></div>
-                            <p3>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna
-                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                            <div class="view-project"><a href="">VIEW SITE</a></div>
-                            </p3>                           
-                            <img src="media/test400x325.png">
-                        </div>
-    
-                    </div>
-                </div>
-                
-                </div>
-
             </div>
 
-            <!-- folios -->
-            <div id="folio" class="section">
-            <div class="title-frame"><h2>portfolios</h2></div>
-                <div class="content-frame">
-                    <div class="content folio">
-                        <div class="button L"><p1><a href="/technical">coding & web dev</a></p1></div>
-                        <div class="button R"><p1><a href="/creative">graphics & photography</a></p1></div>
+            <div id="technical" class="tabcontent">
+                <div class="row-1">
+                    <div class="content case half L" >
+                        <h2>S.U.N.N.</h2>
+                        <div class="case-type"><p3>WEB DEV</p3></div>
+                        <p3>
+                        S.U.N.N. is a San Francisco organization dedicated 
+                        to empowering residents through garden education and food literacy.
+                        I was approached me to develop and launch a website that was informative 
+                        and accesible. I also helped develop their logo that appears throughout 
+                        the site itself.
+                        <div class="view-project"><a href="https://sunnsf.org/">VIEW SITE</a></div>
+                        </p3>                           
+                        <img src="media/sunnsforg-case.png">
                     </div>
+
+                    <div class="content case half R">
+                        <h2>phisheye 1.0</h2>
+                        <div class="case-type"><p3>WEB DEV</p3></div>
+                        <p3>The first iteration of phisheye is a site I 
+                        created to showcase my photography. I used inpsiration from tumblr themes for the format.
+                        This site brought me some paid photography work! I am in the process of launching a second, 
+                        updated version.
+                        <div class="view-project"><a href="https://github.com/kiaragil/csc648-848-sw-engineering-SU21-T04">VIEW SITE</a></div>
+                        </p3>
+                        <img src="media/phisheyev1-case.png">
+                    </div>
+
+                </div>
+
+                <div class="row-2">
+                    <div class="content case half L">
+                        <h2>UniTea</h2>
+                        <div class="case-type"><p3>SOFTWARE DEV/WEB DEV</p3></div>
+                        <p3>UniTea is a web app developed for a final group project. It's purpose was to promote university
+                        study groups in a post-COVID setting. Users could make accounts, make and interact with posts,
+                        and even customize their profile. I acted as a member of the back-end team and as project lead. 
+                        It was hosted using AWS EC2.
+                        <div class="view-project"><a href="https://github.com/kiaragil/unitea">VIEW PROJECT</a></div>
+                        </p3>
+                        <img src="media/unitea-casesmaller.png">
+                    </div>
+
+                    <div class="content case half R">
+                        <h2>Hoply</h2>
+                        <div class="case-type"><p3>SOFTWARE DEV/WEB DEV</p3></div>
+                        <p3>
+                        Hoply is a project made to practice
+                        CRUD operations. It is is a very simple text-based social media. Users were able to create an
+                        account and then make, edit, react to- posts. I developed the app on Android studio with Java and SQL.
+                        <div class="view-project"><a href="https://github.com/kiaragil/HoplyApp">VIEW PROJECT</a></div>
+                        </p3>                    
+                        <img src="media/hoply-case.png">
+                    </div>
+
                 </div>
             </div>
 
-            <!-- contact -->
-            <div id="contact" class="section">
-                <div class="title-frame"><h2>contact</h2></div>
-                <div class="content-frame">
-                    <div class="content contact">
-                            <p1><a href="mailto:kiaragil415@gmail.com">email.</a></p1>
-                            <p1><a href="http://github.com/kiaragil">github.</a></p1>
-                            <p1><a href="https://www.linkedin.com/in/kiaragil/">linkedin.</a></p1>
-                            <p1><a href="https://www.instagram.com/phisheye_/">instagram.</a></p1>
-                            <p1><a href="https://letterboxd.com/bizarro_kiara/">letterboxd.</a></p1> 
-                        </ul>
+            <div id="creative" class="tabcontent">
+                <div class="row-1">
+                    <div class="content case half L" >
+                        <h2>CASE TITLE</h2>
+                        <div class="case-type"><p3>CASE TYPE</p3></div>
+                        <p3>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        <div class="view-project"><a href="">VIEW SITE</a></div>
+                        </p3>                           
+                        <img src="media/test400x325.png">
                     </div>
+
+                    <div class="content case half R">
+                        <h2>CASE TITLE</h2>
+                        <div class="case-type"><p3>CASE TYPE</p3></div>
+                        <p3>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        <div class="view-project"><a href="">VIEW SITE</a></div>
+                        </p3>                           
+                        <img src="media/test400x325.png">
+                    </div>
+
+                </div>
+
+                <div class="row-2">
+                    <div class="content case half L">
+                        <h2>CASE TITLE</h2>
+                        <div class="case-type"><p3>CASE TYPE</p3></div>
+                        <p3>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        <div class="view-project"><a href="">VIEW SITE</a></div>
+                        </p3>                           
+                        <img src="media/test400x325.png">
+                    </div>
+
+                    <div class="content case half R">
+                        <h2>CASE TITLE</h2>
+                        <div class="case-type"><p3>CASE TYPE</p3></div>
+                        <p3>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        <div class="view-project"><a href="">VIEW SITE</a></div>
+                        </p3>                           
+                        <img src="media/test400x325.png">
+                    </div>
+
                 </div>
             </div>
+            
+            </div>
+
+        </div>
+
+        <!-- folios -->
+        <div id="folio" class="section folios">
+        <div class="title-frame"><h2>portfolios</h2></div>
+            <div class="content-frame">
+                <div class="content folio">
+                    <div class="button L"><p1><a href="/technical">coding & web dev</a></p1></div>
+                    <div class="button R"><p1><a href="/creative">graphics & photography</a></p1></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- contact -->
+        <div id="contact" class="section contact">
+            <div class="title-frame"><h2>contact</h2></div>
+            <div class="content-frame">
+                <div class="content contact">
+                        <p1><a href="mailto:kiaragil415@gmail.com">email.</a></p1>
+                        <p1><a href="http://github.com/kiaragil">github.</a></p1>
+                        <p1><a href="https://www.linkedin.com/in/kiaragil/">linkedin.</a></p1>
+                        <p1><a href="https://www.instagram.com/phisheye_/">instagram.</a></p1>
+                        <p1><a href="https://letterboxd.com/bizarro_kiara/">letterboxd.</a></p1> 
+                    </ul>
+                </div>
+            </div>
+        </div>
 
     </body>
 </html>
