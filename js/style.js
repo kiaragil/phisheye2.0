@@ -23,10 +23,34 @@ function randomBGColor() {
 
 
 function mobileFormat() {
-    var z = document.getElementById("navbar")
+    var y = document.getElementById("intro");
+    var z = document.getElementById("navbar");
 
     if (window.innerWidth < 840) {
+        // y.outerHTML = 
+        // `<div id="intro">
 
+        //     <div class="content-frame intro">
+        //         <h1>Hi, I'm Kiara!</h1>
+        //         <p1>I’m on a mission to find the intersection of my artistic pursuits and technical skills.</p1>
+        //     </div>
+
+
+        //     <div class="content-frame experience">
+        //         <h3>I have experience in:</h3>
+        //         <p2>
+        //             <ul>
+        //                 <li>full-stack web development.</li>
+        //                 <li>software engineering.</li>
+        //                 <li>graphic design.</li>
+        //                 <li>photography.</li>
+        //             </ul>   
+        //         </p2>
+        //     </div>
+
+
+        // </div>
+        // `
         z.outerHTML =
         `<div class="nav" id="navbar">
             <a href="/" id="logo" title="logo">phish<div class="lighter">eye</div></a> 
@@ -41,6 +65,25 @@ function mobileFormat() {
     }
 
     else {
+
+        // y.outerHTML = 
+        // `<div id="intro" class="content-frame">
+        //     <div class="content intro">
+        //         <h1>Hi, I'm Kiara!</h1>
+        //         <p1>I’m on a mission to find the intersection of my artistic pursuits and technical skills.</p1>
+        //     </div>
+        //     <div class="content experience">
+        //         <h3>I have experience in:</h3>
+        //         <p2>
+        //             <ul>
+        //                 <li>full-stack web development.</li>
+        //                 <li>software engineering.</li>
+        //                 <li>graphic design.</li>
+        //                 <li>photography.</li>
+        //             </ul>   
+        //         </p2>
+        //     </div>
+        // </div>`
 
         z.outerHTML = 
         `<div class="nav home" id="navbar">

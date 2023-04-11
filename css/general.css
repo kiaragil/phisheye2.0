@@ -4,6 +4,7 @@ body {
     display: flex;
     flex-direction: column;
     padding-bottom: 125px;
+    overflow: scroll;
 }
 
 img {
@@ -20,8 +21,8 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 55px;
-    line-height: 55px;
+    font-size: 50px;
+    line-height: 50px;
     
 }
 
@@ -75,7 +76,7 @@ a {
 }
 
 .section {
-    width: 90%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 80px;
@@ -190,7 +191,7 @@ a:hover {
 
     .section.top-sec.index {
         z-index: 1;
-        margin-top: 50%;
+        margin-top: 61px;
         margin-bottom: 0px;
     }
     
@@ -213,7 +214,6 @@ a:hover {
         flex-wrap: wrap;
         z-index: 1;
     }
-
  
 }
 

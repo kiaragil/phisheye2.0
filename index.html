@@ -11,34 +11,33 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Shrikhand&display=swap" rel="stylesheet">
-
         <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Righteous&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
-
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/general.css">
         <link rel="stylesheet" href="css/navbar.css">
 
         <script src="js/style.js"></script>
+        <script src="https://kit.fontawesome.com/2415949e85.js" crossorigin="anonymous"></script>
     </head>
 
 
     <body class="change" onload="mobileFormat(); return randomBGColor();">
 
         <section>
-            <div class="nav home" id="navbar">
+            <div class="nav" id="navbar">
                 <a href="/" id="logo" title="logo">phish<div class="lighter">eye</div></a> 
                 <div class="links">
                 <a href="about" title="about">about</a>
                 <a href="#works" title="works">works</a>
                 <a href="#contact" title="contact">contact</a>
-                <a href="javascript:void(0);" title="Menu" class="icon" onclick="toggle()">&#9776;</a>
+                <a href="javascript:void(0);" title="Menu" class="icon" onclick="toggle()"><i class="fa-regular fa-bars"></i></a>
                 </div>
             </div>
             <!-- intro -->
             <div class="top-sec section index">
             <div class="title-frame"><h2>Intro</h2></div>
                 
-                <div class="content-frame">
+                <div id="intro" class="content-frame">
                     <div class="content intro">
                             <h1>Hi, I'm Kiara!</h1>
                             <p1>I’m on a mission to find the intersection of my artistic pursuits and technical skills.</p1>
@@ -57,13 +56,13 @@
 
                 </div>
             </div>
-        </section>
 
+            <i class="fa-solid fa-arrow-down floating"></i>
+            </section>
             <!-- case studys -->
             <div id="works" class="section">
             <div class="title-frame"><h2>works</h2></div>
                 
-                <!-- single case full-->
                 <div class="content-frame">
                     
                     <div class="content case half L" >
@@ -93,7 +92,7 @@
                     </div>
 
                 </div>
-                <!-- single case full-->
+
                 <div class="content-frame">
                     <div class="content case half L">
                         <h2>UniTea</h2>
