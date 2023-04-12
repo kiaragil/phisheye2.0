@@ -21,25 +21,25 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 50px;
-    line-height: 50px;
+    font-size: 40px;
+    line-height: 40px;
     
 }
 
 h2 {
-    font-size: 32px;  
-    line-height: 32px;
+    font-size: 30px;  
+    line-height: 30px;
 }
 
 h3 {
-    font-size: 32px;  
-    line-height: 32px;
+    font-size: 24px;  
+    line-height: 24px;
 
 }
 
 h4 {
-    font-size: 24px;  
-    line-height: 24px;
+    font-size: 20px;  
+    line-height: 20px;
 
 }
 
@@ -49,23 +49,23 @@ p1, p2, p3{
 
 
 p1 {
-    font-size: 22px;  
-    line-height: 26px;
+    font-size: 20px;  
+    line-height: 24px;
     font-weight: 100;
 
 }
 
 
 p2 {
-    font-size: 20px;
-    line-height: 23px;  
+    font-size: 18px;
+    line-height: 22px;  
     font-weight: lighter;
 
 }
 
 p3 {
-    font-size: 18px;
-    line-height: 22px;  
+    font-size: 16px;
+    line-height: 20px;  
     font-weight: lighter;
 
 }
@@ -76,7 +76,8 @@ a {
 }
 
 .section {
-    width: 85%;
+    width: 960px;
+    /* width: 75%; */
     margin-left: auto;
     margin-right: auto;
     margin-top: 80px;
@@ -139,12 +140,6 @@ a:hover {
     transition: background 0.3s linear;
 }
 
-@media screen and (max-width: 660px) {
-    .intro p1 {
-        width: 95%;
-    }
-
-}
 @media screen and (max-width: 840px) {
 
     body {
@@ -183,6 +178,7 @@ a:hover {
     .section {
         z-index: 1;
         width:100%;
+        min-width: 345px;
         margin-top: 25px;
         box-shadow: none;
     }
@@ -203,6 +199,7 @@ a:hover {
     .title-frame {
         text-align: center;
         width: 100%;
+        min-width: 345px;
         height: 30px;
     }
     
@@ -213,10 +210,13 @@ a:hover {
     
     .content-frame {
         width: 100%;
+        min-width: 345px;
         margin-top: 1px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        align-content: center;
+        position: relative;
         z-index: 1;
     }
  
