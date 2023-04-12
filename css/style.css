@@ -144,9 +144,14 @@ a:hover {
 
 @media screen and (max-width: 840px) {
 
+    html, body {
+        overflow-x: hidden;
+    }
+    
     body {
-       margin: 1px;
-       padding-bottom: 75px;
+        position: relative;
+        margin: 1px;
+        padding-bottom: 75px;
     }
 
     h1 {
@@ -179,7 +184,7 @@ a:hover {
 
     .section {
         z-index: 1;
-        width: auto;
+        width: 100%;
         min-width: 360px;
         margin-top: 25px;
         box-shadow: none;
@@ -298,8 +303,6 @@ a:hover {
 }
 
 @media screen and (max-width: 840px) {
-    
-
 
     .nav {
         width: 100%;
@@ -361,9 +364,6 @@ a:hover {
         padding-top: 198px;
         z-index: 3;
     }
-
-
-    
 
     .nav.responsive a {
         display: block;
@@ -463,7 +463,7 @@ a:hover {
     .content-frame .intro{ outline-style: unset;}
 
     .content.intro, .content.experience {
-        width: auto;
+        width: 100%;
         min-width: 345px;
         padding: 15px;
         display: flex;
@@ -683,7 +683,7 @@ a:hover {
 
     .content.case.half {
         height: fit-content;
-        width: auto;
+        width: 100%;
         min-width: 345px;
         display: flex;
         justify-content: column;
@@ -771,9 +771,9 @@ a:hover {
         text-align: center;
     }
 
-    .section.contact, .section.folios {
+    /* .section.contact, .section.folios {
         width: 100%;
-    }
+    } */
 
     .contact p1 {
         outline-style: solid;
