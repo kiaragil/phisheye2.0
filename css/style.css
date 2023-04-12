@@ -355,32 +355,7 @@
         z-index: 10;
     }
 
-    .content.case.half {
-        height: fit-content;
-        display: flex;
-        justify-content: column;
-        text-align: center;
-        width: 100%;
-        min-width: 345px;
-    }
-
-    .case.full.half { display: flex;}
-
-    .folio {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .intro h1, .experience h3{
-        /* width: max-content; */
-        margin: 10px;
-    }
-
-    .intro p1 {
-        width: 80%;
-        text-align: justify;
-    }
+    .content-frame .intro{ outline-style: unset;}
 
     .content.intro, .content.experience {
         width: 100%;
@@ -392,13 +367,20 @@
         align-items: center;
     }
 
-    .content-frame .intro{ outline-style: unset;}
-
-    .content-frame#intro {
-        margin-top: 10vh;
-        padding: 1vh 0vh;
+    .section.index {
+        margin-top: 50px;
     }
 
+    .intro h1, .experience h3{
+        margin: 10px;
+    }
+
+    .intro p1 {
+        width: 80%;
+        text-align: justify;
+    }
+
+ 
     .experience h3 {
         font-size: 25px;  
         line-height: 25px;
@@ -428,10 +410,27 @@
     
     }
 
-    .content-frame .button {
-        /* flex: unset; */
-        padding: 25px 0px;
+    .content.case.half {
+        height: fit-content;
+        display: flex;
+        justify-content: column;
+        text-align: center;
+        width: 100%;
+        min-width: 345px;
     }
+    
+    .case.full.half { display: flex;}
+    
+    .foliobtns {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .content-frame .button {
+        padding: 25px 0px;
+    } 
 
     .content.contact {
         flex-direction: column;
