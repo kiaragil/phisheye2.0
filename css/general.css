@@ -178,7 +178,7 @@ a:hover {
     .section {
         z-index: 1;
         width: auto;
-        min-width: 345px;
+        min-width: 360px;
         margin-top: 25px;
         box-shadow: none;
     }
@@ -197,7 +197,7 @@ a:hover {
     .title-frame {
         text-align: center;
         width: auto;
-        min-width: 345px;
+        min-width: 360px;
         height: 30px;
     }
     
@@ -208,7 +208,7 @@ a:hover {
     
     .content-frame {
         width: auto;
-        min-width: 345px;
+        min-width: 360px;
         margin-top: 1px;
         display: flex;
         flex-direction: column;
@@ -219,4 +219,3 @@ a:hover {
     }
  
 }
-

@@ -1,0 +1,145 @@
+.fa-solid.fa-arrow-down { display: none; }
+
+
+#landing {
+    min-height: 100vh;
+    margin-top: 10%;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+/*INTRO - TWO THIRD*/
+
+.content-frame .intro {
+    outline-style: solid;
+    outline-color:  #1b1b1b;
+    outline-width: thin;
+    flex: 1 1 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    padding: 80px 40px;
+   
+}
+
+.intro h1 {
+    width: max-content;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.intro p1 {
+    width: 100%;
+    text-align: justify;
+}
+
+
+/*INTRO - ONE THIRD*/
+.content-frame .experience {
+    height: auto;
+    margin-left: 1px;
+    flex: 1 1 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 10px 25px 10px 15px;
+}
+
+
+.experience h3 {
+    margin-top: 0;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    width: max-content;
+} 
+
+.experience ul {
+    width: max-content;
+    list-style-type: "* ";
+    line-height: 30px;
+    margin: 0px;
+    padding-left: 20x;
+}
+
+@media screen and (max-width: 840px) {
+
+    .row { flex-direction: column; } 
+
+    #landing {
+        max-height: 100vh;
+        min-width: 345px;
+        margin-top: unset;
+        z-index: 10;
+    }
+
+    .content-frame .intro{ outline-style: unset;}
+
+    .content.intro, .content.experience {
+        width: auto;
+        min-width: 345px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section.index {
+        margin-top: 50px;
+    }
+
+    .intro h1, .experience h3{
+        margin: 10px;
+    }
+
+    .intro p1 {
+        width: 80%;
+        text-align: justify;
+    }
+
+ 
+    .experience h3 {
+        font-size: 25px;  
+        line-height: 25px;
+    }
+
+    .experience ul {
+        width: max-content;
+        padding-left: 13px;
+    }
+
+    .content.experience {
+        margin: unset;
+        padding: 10px unset;
+    }
+
+     .fa-solid.fa-arrow-down {
+        color:#1b1b1b;
+        display: flex;
+        align-self: center;
+        font-size: 6vh;
+        margin: 35px auto;
+
+    }
+
+    .floating { 
+        animation-name: floating;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        margin-left: 30px;
+        margin-top: 5px;
+    }
+     
+    @keyframes floating {
+        0% { transform: translate(0,  0px); }
+        50%  { transform: translate(0, 15px); }
+        100%   { transform: translate(0, -0px); }   
+    }
+
+}

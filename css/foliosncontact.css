@@ -1,0 +1,91 @@
+/*FOLIOS*/
+
+.foliobtns {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+}
+
+.button p1 { width: max-content;}
+
+.content-frame .fbtn {
+    flex: 1 1 50%;
+    padding: 50px 0px;
+}
+
+.content-frame .fbtn.L {
+    outline-style: solid;
+    outline-color:  #1b1b1b;
+    outline-width: thin;
+}
+
+/* CONTACT */
+
+.content.contact {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 30px 0px;
+}
+
+.contact a { padding: 0px 15px;}
+
+
+.techfolio .content-frame, .artfolio .content-frame {
+    flex-direction: column;
+}
+
+.content.fullfolio {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0px 25px 30px;
+
+    
+}
+
+/* .content.fullfolio h3 {
+    
+} */
+
+.content.fullfolio p2 {
+    width: 65%;
+
+}
+
+@media screen and (max-width: 840px) {
+
+    
+    .foliobtns {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .content-frame .fbtn {
+        padding: 25px 0px;
+    } 
+
+    .content.contact {
+        flex-direction: column;
+        margin: unset;
+        min-width: 345px;
+        margin-top: -1px;
+        text-align: center;
+    }
+
+    .section.contact, .section.folios {
+        width: 100%;
+    }
+
+    .contact p1 {
+        outline-style: solid;
+        outline-color:  #1b1b1b;
+        outline-width: thin;
+        padding: 25px 0px;
+        margin-top: 1px;
+    
+    }
+
+}

@@ -1,0 +1,165 @@
+/*CASES*/
+/*FULL CASE
+.content-frame .case{ 
+    padding-bottom: 20px;
+}
+
+.content.full{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.case.mobile.half {
+    display: none;
+}
+.row-1 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 90px;
+    margin-right: 90px;
+} 
+
+.row-1 h2{
+    width: max-content;
+    flex: 2 1 19%;
+}
+
+
+.row-1 p3 {
+    margin-top: 30px;
+    width: 65%;
+    word-wrap: break-word;
+    text-align: justify;
+}
+.case-type p3 {
+    font-weight: 100;
+}
+
+.view-project {
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+
+}
+
+.case img {
+    width: 650px;
+    height: auto;
+
+} */
+
+/* TABS */
+.tabs {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.tablink {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: #a19d8c;
+    float: left;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    padding: 20px 15px;
+    font-size: 18px;
+    width: 50%;
+    position: relative;
+    z-index: 4;
+}
+
+.tablink:hover {
+    font-style: italic;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.tabcontent {
+    display: none;
+    height: 100%;
+}
+
+.buttons {
+    display: flex;
+    position: relative;
+    z-index: 4;
+}
+
+
+#technical {background-color: #e0d9be;}
+
+#creative {background-color: #e0d9be;}
+
+
+.row { display: flex; } 
+
+
+.case.half{
+    flex: 1 1 50%;
+    padding-bottom: 35px;
+    outline-style: solid;
+    outline-color:  #c9c3aa;
+    outline-width: thin;
+     
+}
+
+.content.half {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.case.half h2 {
+    text-align: center;
+    padding: 0px 30px;
+    margin-bottom: 10px;
+}
+
+.case.half p3 {
+    display: block;
+    text-align: justify;
+    margin: 0;
+    width: 90%;
+    /* margin: 0px auto; */
+}
+
+.case.half .case-type p3{
+    width: max-content;
+    justify-self: center;
+    margin: 10px auto;
+
+}
+
+.case.half .view-project {
+    width: max-content;
+    margin: 10px auto;
+    padding-bottom: 0;
+    font-weight: 400;
+}
+
+.case.half img {
+    width: 400px;
+    height: auto;
+    padding: 25px 10px;
+    margin: 0;
+}
+
+@media screen and (max-width: 840px) {
+
+    .content.case.half {
+        height: fit-content;
+        width: auto;
+        min-width: 345px;
+        display: flex;
+        justify-content: column;
+        text-align: center;
+    }
+    
+    .case.full.half { display: flex;}
+
+}
