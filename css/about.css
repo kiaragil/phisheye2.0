@@ -1,4 +1,4 @@
-/*ABOUT */
+/*ABOUT PAGE*/
 
 .content-frame .about {
     padding: 35px 30px;
@@ -27,9 +27,6 @@
 }
 
 .content.about p3 { text-align: justify; }
-
-
-/*INTERESTS */
 
 .content-frame .interests {
     flex: 1 1 50%;

@@ -1,3 +1,5 @@
+/*GENERAL*/
+
 body {
     color: #1b1b1b;
     background-color: #C5CBE3;
@@ -142,9 +144,14 @@ a:hover {
 
 @media screen and (max-width: 840px) {
 
+    html, body {
+        overflow-x: hidden;
+    }
+    
     body {
-       margin: 1px;
-       padding-bottom: 75px;
+        position: relative;
+        margin: 1px;
+        padding-bottom: 75px;
     }
 
     h1 {
@@ -177,7 +184,7 @@ a:hover {
 
     .section {
         z-index: 1;
-        width: auto;
+        width: 100%;
         min-width: 360px;
         margin-top: 25px;
         box-shadow: none;

@@ -1,4 +1,5 @@
 /*CASES*/
+
 /*FULL CASE
 .content-frame .case{ 
     padding-bottom: 20px;
@@ -153,7 +154,7 @@
 
     .content.case.half {
         height: fit-content;
-        width: auto;
+        width: 100%;
         min-width: 345px;
         display: flex;
         justify-content: column;

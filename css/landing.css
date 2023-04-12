@@ -1,3 +1,4 @@
+/*LANDING*/
 .fa-solid.fa-arrow-down { display: none; }
 
 
@@ -10,7 +11,7 @@
     align-content: center;
 }
 
-/*INTRO - TWO THIRD*/
+/*INTRO */
 
 .content-frame .intro {
     outline-style: solid;
@@ -38,7 +39,7 @@
 }
 
 
-/*INTRO - ONE THIRD*/
+/*EXPERIENCE*/
 .content-frame .experience {
     height: auto;
     margin-left: 1px;
@@ -80,7 +81,7 @@
     .content-frame .intro{ outline-style: unset;}
 
     .content.intro, .content.experience {
-        width: auto;
+        width: 100%;
         min-width: 345px;
         padding: 15px;
         display: flex;

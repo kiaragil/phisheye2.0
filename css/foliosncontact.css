@@ -75,9 +75,9 @@
         text-align: center;
     }
 
-    .section.contact, .section.folios {
+    /* .section.contact, .section.folios {
         width: 100%;
-    }
+    } */
 
     .contact p1 {
         outline-style: solid;

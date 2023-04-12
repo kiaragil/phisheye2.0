@@ -1,3 +1,5 @@
+/*NAVBAR*/
+
 #logo {
     display: inline-flex;
     padding: 10px 30px;
@@ -72,8 +74,6 @@
 }
 
 @media screen and (max-width: 840px) {
-    
-
 
     .nav {
         width: 100%;
@@ -135,9 +135,6 @@
         padding-top: 198px;
         z-index: 3;
     }
-
-
-    
 
     .nav.responsive a {
         display: block;
