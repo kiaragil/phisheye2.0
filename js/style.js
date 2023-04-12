@@ -5,7 +5,7 @@ function toggle() {
         x.className += " responsive";
     }
     else {
-        x.className = "nav";
+        x.className = "";
     }
 
     

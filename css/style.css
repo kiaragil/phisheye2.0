@@ -3,7 +3,7 @@
 
 #landing {
     min-height: 100vh;
-    margin-top: 15%;
+    margin-top: 10%;
     z-index: 10;
     display: flex;
     flex-direction: column;
@@ -22,7 +22,7 @@
     justify-content: center;
     align-items: start;
 
-    padding: 60px 40px;
+    padding: 80px 40px;
    
 }
 
@@ -167,7 +167,7 @@
 #creative {background-color: #e0d9be;}
 
 
-.row-1, .row-2 { display: flex; } 
+.row { display: flex; } 
 
 
 .case.half{
@@ -182,28 +182,29 @@
 .content.half {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    /* justify-content: center; */
     align-items: center;
 }
 
 .case.half h2 {
-    width: fit-content;
-    justify-self: center;
+    text-align: center;
+    padding: 0px 30px;
     margin-bottom: 10px;
-}
-
-.case.half .case-type{
-    width: max-content;
-    justify-self: center;
-    margin: 10px auto;
-
 }
 
 .case.half p3 {
     display: block;
     text-align: justify;
     margin: 0;
-    margin: 0px 35px 10px 35px;
+    width: 90%;
+    /* margin: 0px auto; */
+}
+
+.case.half .case-type p3{
+    width: max-content;
+    justify-self: center;
+    margin: 10px auto;
+
 }
 
 .case.half .view-project {
@@ -216,13 +217,15 @@
 .case.half img {
     width: 400px;
     height: auto;
-    padding: 0;
+    padding: 25px 10px;
     margin: 0;
 }
 
 /*FOLIOS*/
 
-.folio {
+/*FOLIOS*/
+
+.foliobtns {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
@@ -320,9 +323,30 @@
 
 .interests li { line-height: 25px; }
 
+.techfolio .content-frame, .artfolio .content-frame {
+    flex-direction: column;
+}
+
+.content.fullfolio {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0px 25px 30px;
+
+    
+}
+
+.content.fullfolio h3 {
+    
+}
+
+.content.fullfolio p2 {
+    width: 65%;
+
+}
+
 @media screen and (max-width: 840px) {
 
-    .row-1, .row-2 { flex-direction: column; } 
+    .row { flex-direction: column; } 
 
     #landing {
         max-height: 100vh;
@@ -345,10 +369,11 @@
     .folio {
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 
     .intro h1, .experience h3{
-        width: max-content;
+        /* width: max-content; */
         margin: 10px;
     }
 
@@ -404,7 +429,7 @@
     }
 
     .content-frame .button {
-        flex: unset;
+        /* flex: unset; */
         padding: 25px 0px;
     }
 
