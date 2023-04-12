@@ -3,7 +3,7 @@
 
 #landing {
     min-height: 100vh;
-    margin-top: 125px;
+    margin-top: 15%;
     z-index: 10;
     display: flex;
     flex-direction: column;
@@ -16,13 +16,13 @@
     outline-style: solid;
     outline-color:  #1b1b1b;
     outline-width: thin;
-    flex: 1 1 60%;
+    flex: 1 1 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
 
-    padding: 100px 0px 100px 60px;
+    padding: 60px 40px;
    
 }
 
@@ -33,7 +33,7 @@
 }
 
 .intro p1 {
-    width: 85%;
+    width: 100%;
     text-align: justify;
 }
 
@@ -42,27 +42,30 @@
 .content-frame .experience {
     height: auto;
     margin-left: 1px;
-    flex: 1 1 40%;
+    flex: 1 1 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    margin: 10px 25px;
+    margin: 10px 25px 10px 15px;
 }
 
 
 .experience h3 {
     margin-top: 0;
+    margin-left: 20px;
     margin-bottom: 15px;
     width: max-content;
 } 
 
 .experience ul {
+    width: max-content;
     list-style-type: "* ";
     line-height: 30px;
     margin: 0px;
     padding-left: 20x;
 }
+
 
 /*CASES*/
 /*FULL CASE
@@ -256,11 +259,11 @@
 /*ABOUT */
 
 .content-frame .about {
-    padding: 35px 40px;
+    padding: 35px 30px;
     outline-style: solid;
     outline-color:  #1b1b1b;
     outline-width: thin;
-    flex: 1 1 45%;
+    flex: 1 1 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -281,13 +284,13 @@
     margin-bottom: 15px;
 }
 
-.content.about p2 { text-align: justify; }
+.content.about p3 { text-align: justify; }
 
 
 /*INTERESTS */
 
 .content-frame .interests {
-    flex: 1 1 55%;
+    flex: 1 1 50%;
     padding: 35px 30px;
     display: flex;
     flex-direction: column;
@@ -296,10 +299,10 @@
     padding-left: 40px;
 }
 
-.content.interests p2 {
+/* .content.interests p3 {
     padding: 0;
     margin: 0;
-}
+} */
 
 .content.interests h4 {
     width: max-content;
@@ -310,7 +313,7 @@
 
 .content.interests ul {
     list-style-type: "* ";
-    line-height: 20px;
+    line-height: 28px;
     margin: 0;
 
 }
@@ -323,6 +326,7 @@
 
     #landing {
         max-height: 100vh;
+        min-width: 345px;
         margin-top: unset;
         z-index: 10;
     }
@@ -333,6 +337,7 @@
         justify-content: column;
         text-align: center;
         width: 100%;
+        min-width: 345px;
     }
 
     .case.full.half { display: flex;}
@@ -347,8 +352,14 @@
         margin: 10px;
     }
 
+    .intro p1 {
+        width: 80%;
+        text-align: justify;
+    }
+
     .content.intro, .content.experience {
-        width: auto;
+        width: 100%;
+        min-width: 345px;
         padding: 15px;
         display: flex;
         flex-direction: column;
@@ -401,6 +412,7 @@
         flex-direction: column;
         margin: unset;
         width: 100%;
+        min-width: 345px;
         margin-top: -1px;
         text-align: center;
     }
