@@ -529,7 +529,6 @@ a:hover {
 
 /*CASES*/
 
-/*FULL CASE
 .content-frame .case{ 
     padding-bottom: 20px;
 }
@@ -552,13 +551,13 @@ a:hover {
 
 .row-1 h2{
     width: max-content;
-    flex: 2 1 19%;
+    flex: 2 1 40%
 }
 
 
 .row-1 p3 {
     margin-top: 30px;
-    width: 65%;
+    width: 55%;
     word-wrap: break-word;
     text-align: justify;
 }
@@ -575,10 +574,11 @@ a:hover {
 }
 
 .case img {
-    width: 650px;
+    padding: 45px 0px;
+    width: 500px;
     height: auto;
 
-} */
+}
 
 /* TABS */
 .tabs {
@@ -631,6 +631,7 @@ a:hover {
 
 .case.half{
     flex: 1 1 50%;
+    padding: 35px 50px;
     padding-bottom: 35px;
     outline-style: solid;
     outline-color:  #c9c3aa;
@@ -647,7 +648,7 @@ a:hover {
 .case.half h2 {
     text-align: center;
     padding: 0px 30px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 .case.half p3 {
@@ -661,7 +662,7 @@ a:hover {
 .case.half .case-type p3{
     width: max-content;
     justify-self: center;
-    margin: 10px auto;
+    margin: 5px auto 25px auto;
 
 }
 
@@ -673,11 +674,13 @@ a:hover {
 }
 
 .case.half img {
-    width: 400px;
+    width: 450px;
     height: auto;
-    padding: 25px 10px;
-    margin: 0;
+    padding: 0px 5px 25px 5px;
+    align-self: center;
 }
+
+.case .descrip { display: none;}
 
 @media screen and (max-width: 840px) {
 
@@ -689,8 +692,11 @@ a:hover {
         justify-content: column;
         text-align: center;
     }
+
+    .case .descrip { display: none;}
     
     .case.full.half { display: flex;}
+
 
 }
 
