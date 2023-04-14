@@ -680,11 +680,17 @@ a:hover {
 @media screen and (max-width: 840px) {
 
     .content.case.half {
-        /* height: fit-content; */
+        height: fit-content;
         width: auto;
         /* min-width: 345px; */
         justify-content: center;
         text-align: center;
+    }
+
+    .case.half img {
+        width: auto;
+        height: auto;
+        padding: 0px 5px 25px 5px;
     }
 
     .case .descrip { display: none;}
