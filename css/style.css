@@ -581,7 +581,7 @@ a:hover {
 
 .content.extras .pic-row, .content.post .pic-row {
     padding: 25px 40px;
-    width: 100%;
+    width: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -690,13 +690,7 @@ a:hover {
     height: auto;
 }
 
-/* .case.post .hor {
-    padding: 30px 20px 10px 20px ;
-    max-width: 50%;
-} */
-
 .case.half .hor {
-    /* max-width: 80%; */
     display: flex;
     align-self: center;
     margin-left: auto;
@@ -706,18 +700,13 @@ a:hover {
 
 @media screen and (max-width: 840px) {
 
-    /* .case.post .hor {
-        max-width: 80%;
-    } */
-
     .case.half img {
         padding-bottom: 30px;
     }
 
     .case.post img {
         max-height: 100%;
-        width: 80%;
-        width: auto; 
+        width: 80%; 
         display: flex;
         align-items: center;
     }
