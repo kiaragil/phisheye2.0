@@ -143,6 +143,23 @@ a:hover {
     transition: background 0.3s linear;
 }
 
+.case.post .hor {
+    padding: 30px 20px 10px 20px ;
+    max-width: 50%;
+    /* height: auto; */ 
+}
+
+.case.half .hor {
+    max-width: 80%;
+    display: flex;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+
 
 @media screen and (max-width: 840px) {
 
@@ -549,8 +566,7 @@ a:hover {
 .row-1 {
     display: flex;
     justify-content: space-between;
-    margin-left: 90px;
-    margin-right: 90px;
+    margin: 20px 75px;
 } 
 
 .row-1 h2{
@@ -560,8 +576,8 @@ a:hover {
 
 
 .row-1 p3 {
-    margin-top: 30px;
-    width: 55%;
+    margin-top: 20px;
+    width: 50%;
     word-wrap: break-word;
     text-align: justify;
 }
@@ -571,15 +587,15 @@ a:hover {
 
 .view-project {
     text-align: right;
-    padding: 0;
+    padding: 15px;
     margin: 0;
     font-weight: 400;
 
 }
 
-.case.full img {
-    padding: 45px 0px;
-    width: 95%;
+.case.post img {
+    padding: 25px 0px;
+    width: 50%;
     height: auto;
 
 }
@@ -681,14 +697,13 @@ a:hover {
 
 @media screen and (max-width: 840px) {
 
-    .content-frame .case{ 
-        padding-bottom: unset;
+    img {
+        padding-bottom: 30px;
     }
     
-    .content.post{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+
+    .content-frame .case{ 
+        padding-bottom: unset;
     }
     
     .row-1 {
@@ -713,8 +728,6 @@ a:hover {
     .row-1 p3 {
         margin-top: 15px;
         width: 85%;
-        word-wrap: break-word;
-        text-align: justify;
         align-self: center;
     }
     .case-type p3 {
@@ -724,15 +737,14 @@ a:hover {
     
     .view-project {
         text-align: right;
-        padding: 0;
+        padding: 30px 10px;
         margin: 0;
         font-weight: 400;
-    
     }
     
     .case.post img {
-        padding: 45px 0px;
-        width: 500px;
+        padding: 25px 0px;
+        width: 550px;
         height: auto;
     
     }
@@ -745,14 +757,8 @@ a:hover {
         text-align: center;
     }
 
-    /* .case.half img {
-        height: auto;
-        padding: 0px 5px 25px 5px;
-    } */
 
     .case .descrip { display: none;}
-    
-    /* .case.post.half { display: flex;} */
 
 
 }
@@ -877,7 +883,10 @@ a:hover {
     margin-bottom: 15px;
 }
 
-.content.about p3 { text-align: justify; }
+.content.about p3 { 
+    text-align: justify; 
+    line-height: 25px;
+}
 
 .content-frame .interests {
     flex: 1 1 50%;
