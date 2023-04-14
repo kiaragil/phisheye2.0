@@ -204,7 +204,7 @@ a:hover {
     .title-frame {
         text-align: center;
         width: auto;
-        min-width: 360px;
+        /* min-width: 360px; */
         height: 30px;
     }
     
@@ -215,7 +215,7 @@ a:hover {
     
     .content-frame {
         width: auto;
-        min-width: 360px;
+        /* min-width: 360px; */
         margin-top: 1px;
         display: flex;
         flex-direction: column;
@@ -306,7 +306,7 @@ a:hover {
 
     .nav {
         width: 100%;
-        min-width: 345px;
+        /* min-width: 345px; */
         position: fixed;
         z-index: 2;
         left: 0;
@@ -455,7 +455,7 @@ a:hover {
 
     #landing {
         max-height: 100vh;
-        min-width: 345px;
+        /* min-width: 345px; */
         margin-top: unset;
         z-index: 10;
     }
@@ -680,7 +680,7 @@ a:hover {
 @media screen and (max-width: 840px) {
 
     .content.case.half {
-        height: fit-content;
+        /* height: fit-content; */
         width: auto;
         /* min-width: 345px; */
         justify-content: center;
