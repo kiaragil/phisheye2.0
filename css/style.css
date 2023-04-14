@@ -10,7 +10,8 @@ body {
 }
 
 img {
-    display: block;
+    /* display: block; */
+    object-fit: cover;
     max-width: 100%;
     align-self: center;
     height: auto;
