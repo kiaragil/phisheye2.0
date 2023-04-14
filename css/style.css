@@ -10,6 +10,7 @@ body {
 }
 
 img {
+    /* min-width: 40%; */
     max-width: 100%;
     height: auto;
 }
@@ -99,7 +100,7 @@ a {
 
 .title-frame {
     text-align: left;
-    width: 100%;
+    width: 1000px;
     height: 40px;
     position: relative;
     z-index: 5;
@@ -119,7 +120,7 @@ a {
 
 .content-frame {
     height: auto;
-    width: 100%;
+    width: 1000px;
     margin-top: 1px;
     display: flex;
     flex-wrap: nowrap;
@@ -142,7 +143,17 @@ a:hover {
     transition: background 0.3s linear;
 }
 
+.img {
+    width:40%;
+    /* height: auto; */
+}
+
 @media screen and (max-width: 840px) {
+
+    .hor {
+        max-width: 60%;
+        /* height: auto; */
+    }
 
     html, body {
         overflow-x: hidden;
@@ -596,7 +607,7 @@ a:hover {
     outline: none;
     text-align: center;
     cursor: pointer;
-    padding: 20px 15px;
+    padding: 20px 20px;
     font-size: 18px;
     width: 50%;
     position: relative;
@@ -669,11 +680,10 @@ a:hover {
     font-weight: 400;
 }
 
-.case.half img {
-    /* width:fit-content; */
+/* .case.half img {
     height: auto;
     padding: 0px 5px 25px 5px;
-}
+} */
 
 .case .descrip { display: none;}
 
@@ -687,11 +697,10 @@ a:hover {
         text-align: center;
     }
 
-    .case.half img {
-        /* width: auto; */
+    /* .case.half img {
         height: auto;
         padding: 0px 5px 25px 5px;
-    }
+    } */
 
     .case .descrip { display: none;}
     
