@@ -606,11 +606,6 @@ a:hover {
 
 }
 
-.content.extras {
-    display: flex;
-    flex-direction: column;
-}
-
 .content.extras .pic-row, .content.post .pic-row {
     padding: 25px 40px;
     width: 100%;
@@ -618,7 +613,13 @@ a:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
 
+.content.extras h2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 75px;
+    align-self: start;
 }
 
 /* TABS */
@@ -709,10 +710,6 @@ a:hover {
     font-weight: 400;
 }
 
-/* .case.half img {
-    height: auto;
-    padding: 0px 5px 25px 5px;
-} */
 
 .case .descrip { display: none;}
 
@@ -788,7 +785,13 @@ a:hover {
     
     }
 
-
+    .content.extras h2 {
+        /* display: unset; */
+        /* flex-direction: column; */
+        align-self: center;
+        margin-left: unset;
+        text-align: center;
+    }
 }
 
 /*FOLIOS*/
