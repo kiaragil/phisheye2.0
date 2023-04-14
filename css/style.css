@@ -12,6 +12,7 @@ body {
 img {
     /* min-width: 40%; */
     max-width: 100%;
+    align-self: center;
     height: auto;
 }
 
@@ -163,6 +164,10 @@ a:hover {
 
 @media screen and (max-width: 840px) {
 
+    .case.post .hor {
+        max-width: 80%;
+    }
+
     .hor {
         max-width: 90%;
         /* height: auto; */
@@ -175,7 +180,7 @@ a:hover {
     body {
         position: relative;
         margin: 1px;
-        padding-bottom: 75px;
+        padding-bottom: 50px;
     }
 
     h1 {
@@ -594,9 +599,25 @@ a:hover {
 }
 
 .case.post img {
+
     padding: 25px 0px;
-    width: 50%;
+    width: 40%;
     height: auto;
+
+}
+
+.content.extras {
+    display: flex;
+    flex-direction: column;
+}
+
+.content.extras .pic-row, .content.post .pic-row {
+    padding: 25px 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -697,7 +718,7 @@ a:hover {
 
 @media screen and (max-width: 840px) {
 
-    img {
+    .case.half img {
         padding-bottom: 30px;
     }
     
@@ -760,6 +781,13 @@ a:hover {
 
     .case .descrip { display: none;}
 
+    .content.extras .pic-row, .content.post .pic-row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
 
 }
 
@@ -800,6 +828,12 @@ a:hover {
 .techfolio .content-frame, .artfolio .content-frame {
     flex-direction: column;
 }
+
+#fullfolio .title-frame{
+    height: 30px;
+    padding: unset;
+}
+
 
 .content.fullfolio {
     flex-direction: column;
