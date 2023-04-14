@@ -29,8 +29,8 @@ h1 {
 }
 
 h2 {
-    font-size: 30px;  
-    line-height: 30px;
+    font-size: 28px;  
+    line-height: 28px;
 }
 
 h3 {
@@ -160,8 +160,8 @@ a:hover {
     }
     
     h2 {
-        font-size: 26px;  
-        line-height: 26px;
+        font-size: 30px;  
+        line-height: 30px;
     }
 
     h4 {
@@ -573,7 +573,7 @@ a:hover {
 
 }
 
-.case img {
+.case.full img {
     padding: 45px 0px;
     width: 500px;
     height: auto;
@@ -646,20 +646,16 @@ a:hover {
 }
 
 .case.half h2 {
+    font-size: 25px;  
     text-align: center;
     padding: 0px 30px;
     margin-bottom: 0px;
 }
 
-.case.half p3 {
-    display: block;
-    text-align: justify;
-    margin: 0;
-    width: 90%;
-    /* margin: 0px auto; */
-}
+
 
 .case.half .case-type p3{
+    display: block;
     width: max-content;
     justify-self: center;
     margin: 5px auto 25px auto;
@@ -674,10 +670,8 @@ a:hover {
 }
 
 .case.half img {
-    width: 450px;
-    height: auto;
     padding: 0px 5px 25px 5px;
-    align-self: center;
+    /* align-self: center; */
 }
 
 .case .descrip { display: none;}
