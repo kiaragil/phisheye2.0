@@ -540,15 +540,12 @@ a:hover {
     padding-bottom: 20px;
 }
 
-.content.full{
+.content.post{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.case.mobile.half {
-    display: none;
-}
 .row-1 {
     display: flex;
     justify-content: space-between;
@@ -582,7 +579,7 @@ a:hover {
 
 .case.full img {
     padding: 45px 0px;
-    width: 500px;
+    width: 95%;
     height: auto;
 
 }
@@ -684,6 +681,62 @@ a:hover {
 
 @media screen and (max-width: 840px) {
 
+    .content-frame .case{ 
+        padding-bottom: unset;
+    }
+    
+    .content.post{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .row-1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+        margin: 0;
+        text-align: center;
+    } 
+    
+    
+    .row-1 h2{
+        width: max-content;
+        flex: unset;
+        align-self: center;
+        margin-bottom: 0px;
+        margin-top: 55px;
+    }
+    
+    
+    .row-1 p3 {
+        margin-top: 15px;
+        width: 85%;
+        word-wrap: break-word;
+        text-align: justify;
+        align-self: center;
+    }
+    .case-type p3 {
+        font-weight: 100;
+        
+    }
+    
+    .view-project {
+        text-align: right;
+        padding: 0;
+        margin: 0;
+        font-weight: 400;
+    
+    }
+    
+    .case.post img {
+        padding: 45px 0px;
+        width: 500px;
+        height: auto;
+    
+    }
+
     .content.case.half {
         height: fit-content;
         width: auto;
@@ -699,7 +752,7 @@ a:hover {
 
     .case .descrip { display: none;}
     
-    .case.full.half { display: flex;}
+    /* .case.post.half { display: flex;} */
 
 
 }
