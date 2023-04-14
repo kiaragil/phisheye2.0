@@ -579,13 +579,13 @@ a:hover {
 
 }
 
-.content.extras .pic-row, .content.post .pic-row {
+.content.extras .pics, .content.post .pics {
     padding: 25px 40px;
     width: auto;
-    display: flex;
-    flex-direction: row;
+    display: flex;        
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+
 }
 
 .content.extras h2 {
@@ -690,6 +690,12 @@ a:hover {
     height: auto;
 }
 
+.case.post .pics img {
+    padding: 25px;
+    width: 40%;
+    height: auto;
+}
+
 .case.half .hor {
     display: flex;
     align-self: center;
@@ -707,6 +713,13 @@ a:hover {
     .case.post img {
         max-height: 100%;
         width: 80%; 
+        display: flex;
+        align-items: center;
+    }
+
+    .case.post .pics img {
+        max-height: 80%;
+        width: 100%; 
         display: flex;
         align-items: center;
     }
@@ -761,11 +774,8 @@ a:hover {
 
     .case .descrip { display: none;}
 
-    .content.extras .pic-row, .content.post .pic-row {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    
+    .content.extras .pics {
+        width: unset;
     }
 
     .content.extras h2 {
