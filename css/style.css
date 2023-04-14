@@ -684,9 +684,8 @@ a:hover {
 
 .case.post img {
     padding: 25px 0px;
-    max-width: 40%;
+    max-width: 45%;
     height: auto;
-
 }
 
 /* .case.post .hor {
@@ -712,6 +711,10 @@ a:hover {
     .case.half img {
         padding-bottom: 30px;
     }
+
+    .case.post img {
+        max-width: 75%;
+      }
 
     /* .case.post img {
         padding: 25px 0px;
