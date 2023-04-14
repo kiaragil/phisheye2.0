@@ -689,38 +689,38 @@ a:hover {
 
 }
 
-.case.post .hor {
+/* .case.post .hor {
     padding: 30px 20px 10px 20px ;
     max-width: 50%;
-}
+} */
 
-.case.half .hor {
+/* .case.half .hor {
     max-width: 80%;
     display: flex;
     align-self: center;
     margin-left: auto;
     margin-right: auto;
     
-}
+} */
 
 @media screen and (max-width: 840px) {
 
-    .case.post .hor {
+    /* .case.post .hor {
         max-width: 80%;
-    }
+    } */
 
     .case.half img {
         padding-bottom: 30px;
     }
 
-    .case.post img {
+    /* .case.post img {
         padding: 25px 0px;
         max-width: 75%;
         height: auto;
         margin-left: auto;
         margin-right: auto;
     
-    }
+    } */
 
     .content-frame .case{ 
         padding-bottom: unset;
