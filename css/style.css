@@ -143,10 +143,6 @@ a:hover {
     transition: background 0.3s linear;
 }
 
-.img {
-    width:40%;
-    /* height: auto; */
-}
 
 @media screen and (max-width: 840px) {
 
