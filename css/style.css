@@ -670,6 +670,8 @@ a:hover {
 }
 
 .case.half img {
+    width:fit-content;
+    height: auto;
     padding: 0px 5px 25px 5px;
     /* align-self: center; */
 }
