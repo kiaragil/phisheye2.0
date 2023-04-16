@@ -855,12 +855,9 @@ a:hover {
         text-align: center;
     }
 
-    .content-frame .fbtn {
-        flex: 50%
-    } 
-
-    .content-frame .cbtn {
+    .content-frame .fbtn, .content-frame .cbtn {
         flex: 50%;
+        padding: 20px 0px;
     } 
 
     .content.contact {
