@@ -1,7 +1,7 @@
 /*GENERAL*/
 
 body {
-    color: #1b1b1b;
+    color: #282525;
     background-color: #C5CBE3;
     display: flex;
     flex-direction: column;
@@ -10,8 +10,6 @@ body {
 }
 
 img {
-    /* display: block; */
-    /* object-fit: cover; */
     max-width: 100%;
     align-self: center;
     height: auto;
@@ -76,23 +74,23 @@ p3 {
 }
 
 a {
-    color: #1b1b1b;
+    color: #282525;
     text-decoration: none;
 }
 
 .section {
     width: 1000px;
-    /* width: 75%; */
     margin-left: auto;
     margin-right: auto;
     margin-top: 80px;
-    box-shadow: 15px 14px #1b1b1b;
+    box-shadow: 13px 13px 2px #282525;
 }
 
 .section.top-sec {
     margin-top: 0px;
     position: relative;
-    z-index: 5;
+    z-index: 4;
+    box-shadow:unset;
 }
 
 .top-sec .title-frame {
@@ -110,13 +108,13 @@ a {
     overflow: hidden;
     background-color: #a4cd8e;
     outline-style: solid;
-    outline-color:  #1b1b1b;
+    outline-color:  #80a46c;
     outline-width: thin;
 }
 
 .title-frame h2 {
     margin: 0;
-    padding: 5px 32px;
+    padding: 7px 28px;
     width: max-content;
 }
 
@@ -126,9 +124,9 @@ a {
     margin-top: 1px;
     display: flex;
     flex-wrap: nowrap;
-    background-color: #e0d9be;
+    background-color: #eae6d6;
     outline-style: solid;
-    outline-color:  #1b1b1b;
+    outline-color:  #d7d3c0;
     outline-width: thin;
     position: relative;
     z-index: 4;
@@ -151,7 +149,6 @@ a:hover {
 @media screen and (max-width: 840px) {
     .hor {
         max-width: 90%;
-        /* height: auto; */
     }
 
     html, body {
@@ -170,8 +167,8 @@ a:hover {
     }
     
     h2 {
-        font-size: 30px;  
-        line-height: 30px;
+        font-size: 26px;  
+        line-height: 26px;
     }
 
     h4 {
@@ -195,7 +192,6 @@ a:hover {
     .section {
         z-index: 1;
         width: 100%;
-        /* min-width: 360px; */
         margin-top: 25px;
         box-shadow: none;
     }
@@ -210,22 +206,19 @@ a:hover {
         margin-top: 35%;
     }
     
-
     .title-frame {
         text-align: center;
         width: auto;
-        /* min-width: 360px; */
         height: 30px;
     }
     
     .title-frame h2 {
         margin: 0;
-        padding: 5px 20px;
+        padding: 3px 18px;
     }
     
     .content-frame {
         width: auto;
-        /* min-width: 360px; */
         margin-top: 1px;
         display: flex;
         flex-direction: column;
@@ -242,7 +235,7 @@ a:hover {
 #logo {
     display: inline-flex;
     padding: 10px 30px;
-    color: #1b1b1b;
+    color: #282525;
     font-size: 35px;
     font-family: 'Unbounded', cursive;
     font-weight: 500;
@@ -258,24 +251,22 @@ a:hover {
     text-decoration: none;
 } 
 
-
 .nav {
     display: flex;
     justify-content: space-between;
-    /* width: 75%; */
     width: 1000px;
     height: 60px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    z-index: 4;
+    z-index: 5;
 
     background-color: #a4cd8e;
     outline-style: solid;
-    outline-color:  #1b1b1b;
+    outline-color:  #80a46c;
     outline-width: thin;
     
-    box-shadow: 15px 15px #1b1b1b;
+    /* box-shadow: 15px 15px #282525; */
 }
 
 .nh .nav {
@@ -316,7 +307,6 @@ a:hover {
 
     .nav {
         width: 100%;
-        /* min-width: 345px; */
         position: fixed;
         z-index: 2;
         left: 0;
@@ -354,7 +344,6 @@ a:hover {
         padding-right: unset;
       }
 
-    /* .nav.responsive {position: relative; top: 160px;} */
     .nav.responsive .icon {
         position: fixed;
         right: 7px;
@@ -380,7 +369,6 @@ a:hover {
         float: none;
         top: 50px;
         text-align: center;
-        /* z-index: 0; */
     }
 
     .nav.responsive a:hover {
@@ -400,21 +388,27 @@ a:hover {
     z-index: 10;
     display: flex;
     flex-direction: column;
-    align-content: center;
+}
+
+#landing-section {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    box-shadow: 13px 13px 2px #282525;
 }
 
 /*INTRO */
 
 .content-frame .intro {
     outline-style: solid;
-    outline-color:  #1b1b1b;
+    outline-color:  #c9c3aa;
     outline-width: thin;
     flex: 1 1 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
-
     padding: 80px 40px;
    
 }
@@ -433,14 +427,16 @@ a:hover {
 
 /*EXPERIENCE*/
 .content-frame .experience {
+    outline-style: solid;
+    outline-color:  #c9c3aa;
+    outline-width: thin;
     height: auto;
-    margin-left: 1px;
     flex: 1 1 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    margin: 10px 25px 10px 15px;
+    padding: 10px 25px 10px 15px;
 }
 
 
@@ -461,11 +457,18 @@ a:hover {
 
 @media screen and (max-width: 840px) {
 
+    #landing-section {
+        width: unset;
+        display: unset;
+        flex-direction: unset;
+        align-self: unset;
+        box-shadow: unset;
+    }
+
     .row { flex-direction: column; } 
 
     #landing {
         max-height: 100vh;
-        /* min-width: 345px; */
         margin-top: unset;
         z-index: 10;
     }
@@ -474,7 +477,6 @@ a:hover {
 
     .content.intro, .content.experience {
         width: 100%;
-        /* min-width: 345px; */
         padding: 15px;
         display: flex;
         flex-direction: column;
@@ -512,7 +514,7 @@ a:hover {
     }
 
      .fa-solid.fa-arrow-down {
-        color:#1b1b1b;
+        color:#282525;
         display: flex;
         align-self: center;
         font-size: 6vh;
@@ -636,9 +638,9 @@ a:hover {
 }
 
 
-#technical {background-color: #e0d9be;}
+#technical {background-color: #eae6d6;}
 
-#creative {background-color: #e0d9be;}
+#creative {background-color: #eae6d6;}
 
 
 .row { display: flex; } 
@@ -648,7 +650,7 @@ a:hover {
     flex: 1 1 50%;
     padding: 35px 30px;
     outline-style: solid;
-    outline-color:  #c9c3aa;
+    outline-color:  #d7d3c0;
     outline-width: thin;
      
 }
@@ -696,7 +698,7 @@ a:hover {
     height: auto;
 }
 
-.case.half .hor {
+.case.half .hor, .case.post .hor {
     display: flex;
     align-self: center;
     margin-left: auto;
@@ -787,33 +789,31 @@ a:hover {
 
 /*FOLIOS*/
 
-.foliobtns {
+.content.foliobtns, .content.contact {
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
     width: 100%;
 }
 
-.button p1 { width: max-content;}
+/* .button p1 { width: max-content;} */
 
 .content-frame .fbtn {
-    flex: 1 1 50%;
-    padding: 50px 0px;
+    flex: 30%;
+    padding: 40px 0px;
 }
 
-.content-frame .fbtn.L {
+.content-frame .cbtn {
+    flex: 20%;
+    padding: 30px 0px;
+}
+
+
+.content-frame .fbtn, .content-frame .cbtn {
     outline-style: solid;
-    outline-color:  #1b1b1b;
+    outline-color:  #d7d3c0;
     outline-width: thin;
-}
-
-/* CONTACT */
-
-.content.contact {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin: 30px 0px;
 }
 
 .contact a { padding: 0px 15px;}
@@ -848,7 +848,6 @@ a:hover {
 
 @media screen and (max-width: 840px) {
 
-    
     .foliobtns {
         display: flex;
         flex-direction: column;
@@ -857,28 +856,21 @@ a:hover {
     }
 
     .content-frame .fbtn {
-        padding: 25px 0px;
+        flex: 50%
+    } 
+
+    .content-frame .cbtn {
+        flex: 50%;
     } 
 
     .content.contact {
-        flex-direction: column;
+        flex: 50%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
         margin: unset;
-        /* min-width: 345px; */
         margin-top: -1px;
         text-align: center;
-    }
-
-    /* .section.contact, .section.folios {
-        width: 100%;
-    } */
-
-    .contact p1 {
-        outline-style: solid;
-        outline-color:  #1b1b1b;
-        outline-width: thin;
-        padding: 25px 0px;
-        margin-top: 1px;
-    
     }
 
 }
@@ -888,7 +880,7 @@ a:hover {
 .content-frame .about {
     padding: 35px 30px;
     outline-style: solid;
-    outline-color:  #1b1b1b;
+    outline-color:  #d7d3c0;
     outline-width: thin;
     flex: 1 1 50%;
     display: flex;
@@ -902,7 +894,7 @@ a:hover {
     margin-top: 15px;
     width: 300px;
     outline-style: solid;
-    outline-color:  #1b1b1b;
+    outline-color:  #d7d3c0;
     outline-width: thin;
 }
 
@@ -917,6 +909,9 @@ a:hover {
 }
 
 .content-frame .interests {
+    outline-style: solid;
+    outline-color:  #d7d3c0;
+    outline-width: thin;
     flex: 1 1 50%;
     padding: 35px 30px;
     display: flex;
