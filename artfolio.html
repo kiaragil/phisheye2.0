@@ -22,12 +22,12 @@
     <body class="change techfolio" onload="document.getElementById('defaultOpen').click(); mobileFormat(); return randomBGColor();">
 
         <!-- nav -->
-        <div class="nav" id="navbar">
+        <div id="navbar" class="nav">
             <a href="/" id="logo" title="logo">phish<div class="lighter">eye</div></a> 
             <div class="links">
-            <a href="about" title="about">about</a>
-            <a href="/#work" title="work">work</a>
-            <a href="#contact" title="contact">contact</a>
+            <a href="about" title="about" onclick="toggle()">about</a>
+            <a href="#work" title="work" onclick="toggle()">work</a>
+            <a href="#contact" title="contact" onclick="toggle()">contact</a>
             <a href="javascript:void(0);" title="Menu" class="icon" onclick="toggle()"><i class="fa-solid fa-bars"></i></a>
             </div>
         </div>

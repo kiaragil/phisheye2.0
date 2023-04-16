@@ -22,12 +22,12 @@
     <body class="change techfolio" onload="document.getElementById('defaultOpen').click(); mobileFormat(); return randomBGColor();">
 
         <!-- nav -->
-        <div class="nav" id="navbar">
+        <div id="navbar" class="nav">
             <a href="/" id="logo" title="logo">phish<div class="lighter">eye</div></a> 
             <div class="links">
-            <a href="about" title="about">about</a>
-            <a href="/#work" title="work">work</a>
-            <a href="#contact" title="contact">contact</a>
+            <a href="about" title="about" onclick="toggle()">about</a>
+            <a href="#work" title="work" onclick="toggle()">work</a>
+            <a href="#contact" title="contact" onclick="toggle()">contact</a>
             <a href="javascript:void(0);" title="Menu" class="icon" onclick="toggle()"><i class="fa-solid fa-bars"></i></a>
             </div>
         </div>
@@ -143,18 +143,19 @@
         </div>
 
                 <!-- contact -->
-                <div id="contact" class="section contact">
-                    <div class="title-frame"><h2>contact</h2></div>
-                    <div class="content-frame">
-                        <div class="content contact">
-                            <div class="cbtn"><p1><a href="mailto:kiaragil415@gmail.com">email.</a></p1></div>
-                            <div class="cbtn"><p1><a href="http://github.com/kiaragil">github.</a></p1></div>
-                            <div class="cbtn"><p1><a href="https://www.linkedin.com/in/kiaragil/">linkedin.</a></p1></div>
-                            <div class="cbtn"><p1><a href="https://www.instagram.com/phisheye_/">instagram.</a></p1></div>
-                            <div class="cbtn"><p1><a href="https://letterboxd.com/bizarro_kiara/">letterboxd.</a></p1></div>
-                        </div>
-                    </div>
-                    </div>
+       <!-- contact -->
+       <div id="contact" class="section contact">
+        <div class="title-frame"><h2>contact</h2></div>
+        <div class="content-frame">
+            <div class="content contact">
+                <div class="cbtn"><p1><a href="mailto:kiaragil415@gmail.com">email.</a></p1></div>
+                <div class="cbtn"><p1><a href="http://github.com/kiaragil">github.</a></p1></div>
+                <div class="cbtn"><p1><a href="https://www.linkedin.com/in/kiaragil/">linkedin.</a></p1></div>
+                <div class="cbtn"><p1><a href="https://www.instagram.com/phisheye_/">instagram.</a></p1></div>
+                <div class="cbtn"><p1><a href="https://letterboxd.com/bizarro_kiara/">letterboxd.</a></p1></div>
+            </div>
+        </div>
+        </div>
 
     </body>
 </html>

@@ -13,7 +13,7 @@ function toggle() {
 
 function randomBGColor() {
     var color = '#';
-    var colorCode = ['F6D085','FFAC89','C5CBE3']; // colors
+    var colorCode = ['F6D085','C5CBE3']; // colors
     var className = document.getElementsByClassName("change"); // class name to random color
     var i;
     color += colorCode[Math.floor(Math.random() * colorCode.length)];
@@ -34,6 +34,3 @@ function openPage(pageName,elmnt,color) {
     document.getElementById(pageName).style.display = "block";
     elmnt.style.backgroundColor = color;
   }
-  
-//   // Get the element with id="defaultOpen" and click on it
-//   document.getElementById("defaultOpen").click();
