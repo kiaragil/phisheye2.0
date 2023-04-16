@@ -1,14 +1,14 @@
 function toggle() {
     var x = document.getElementById("navbar");
     
-    if (x.className === "nav") {
-        x.className += " responsive";
-    }
-    else {
-        x.className = "nav";
-    }
-
-    
+    if (window.innerWidth < 840) {
+      if (x.className === "nav") {
+          x.className += " responsive";
+      }
+      else {
+          x.className = "nav";
+      }
+  }
 }
 
 function randomBGColor() {
