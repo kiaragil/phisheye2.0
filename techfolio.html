@@ -19,37 +19,39 @@
     </head>
 
 
-    <body class="change techfolio" onload="document.getElementById('defaultOpen').click(); mobileFormat(); return randomBGColor();">
+    <body class="change fullfolio" onload="document.getElementById('defaultOpen').click(); mobileFormat(); return randomBGColor();">
 
+        <div id="landing-section">
         <!-- nav -->
-        <div id="navbar" class="nav">
-            <a href="/" id="logo" title="logo">phish<div class="lighter">eye</div></a> 
-            <div class="links">
-            <a href="about" title="about" onclick="toggle()">about</a>
-            <a href="#work" title="work" onclick="toggle()">work</a>
-            <a href="#contact" title="contact" onclick="toggle()">contact</a>
-            <a href="javascript:void(0);" title="Menu" class="icon" onclick="toggle()"><i class="fa-solid fa-bars"></i></a>
-            </div>
-        </div>
-
-        <!-- intro -->
-        <div class="top-sec section fullfolio">
-        <div id="folio-title" class="content-frame">
-            <div class="content fullfolio">
-                <h2>coding & web dev</h2>
-                <p2>Hello this is a description of the portfolio you are viewing!</p2>
+            <div id="navbar" class="nav">
+                <a href="/" id="logo" title="logo">phish<div class="lighter">eye</div></a> 
+                <div class="links">
+                <a href="about" title="about" onclick="toggle()">about</a>
+                <a href="#work" title="work" onclick="toggle()">work</a>
+                <a href="#contact" title="contact" onclick="toggle()">contact</a>
+                <a href="javascript:void(0);" title="Menu" class="icon" onclick="toggle()"><i class="fa-solid fa-bars"></i></a>
+                </div>
             </div>
 
-        </div>
-        </div>
+            <div class="top-sec section fullfolio">
+            <div id="folio-title" class="content-frame">
+                <div class="content folio-desc">
+                    <h3>coding & web dev</h3>
+                    <p2>These works range from freelance jobs, university projects, 
+                        and personal projects. Click on a project for more details.
+                    </p2>
+                </div>
+
+            </div>
+            </div>
         
+        </div>
         <div id="fullfolio" class="section fullfolio">
         <div class="title-frame"></div>
             
             <div class="content-frame">
 
-            <div class="row">
-                <div class="content case half L" >
+                <div class="content case half" >
                     <a href="/cases/sunnsf">
                     <h2>S.U.N.N.</h2>
                     <div class="case-type"><p3>WEB DEV</p3></div>                    
@@ -63,7 +65,8 @@
                     </p3>       
                     </a>
                 </div>
-                <div class="content case half R">
+
+                <div class="content case half">
                     <a href="/cases/unitea">
                     <h2>UniTea</h2>
                     <div class="case-type"><p3>SOFTWARE DEV/WEB DEV</p3></div>
@@ -77,10 +80,7 @@
                     </a>
                 </div>
 
-            </div>
-
-            <div class="row">
-                <div class="content case half L">
+                <div class="content case half">
                     <a href="/cases/hoply">
                     <h2>Hoply</h2>                  
                     <div class="case-type"><p3>SOFTWARE DEV/WEB DEV</p3></div>
@@ -93,7 +93,7 @@
                     </a>
                 </div>
 
-                <div class="content case half R">
+                <div class="content case half">
                     <a href="/cases/phisheye1">
                     <h2>phisheye 1.0</h2>
                     <div class="case-type"><p3>WEB DEV</p3></div>
@@ -107,42 +107,33 @@
                     </a>
                 </div>
 
-            </div>
+                <div class="content case half">
+                    <a href="/cases/onitama">
+                    <h2>Ontitama</h2>
+                    <div class="case-type"><p3>SOFTWARE DEV</p3></div>
+                    <img src="media/onitama.jpg">
+                    <p3>
+                        <div class= "descrip"></div>
+                    </p3> 
+                    </a>
+                </div>
+
+                <div class="content case half">
+                    <a href="/cases/tankgame">
+                    <h2>Tank Game</h2>
+                    <div class="case-type"><p3>SOFTWARE DEV</p3></div>
+                    <img src="media/tankgame.jpg">
+                    <p3>
+                        <div class= "descrip"></div>
+                    </p3> 
+                    </a>
+                </div>
                 
             </div>  
-            
-            <!-- <div class="row">
-                <div class="content case half L">
-                    <h2>UniTea</h2>
-                    <div class="case-type"><p3>SOFTWARE DEV/WEB DEV</p3></div>
-                    <p3>UniTea is a web app developed for a final group project. It's purpose was to promote university
-                    study groups in a post-COVID setting. Users could make accounts, make and interact with posts,
-                    and even customize their profile. I acted as a member of the back-end team and as project lead. 
-                    It was hosted using AWS EC2.
-                    <div class="view-project"><a href="https://github.com/kiaragil/unitea">VIEW PROJECT</a></div>
-                    </p3>
-                    <img src="media/unitea-casesmaller.png">
-                </div>
-
-                <div class="content case half R">
-                    <h2>phisheye 1.0</h2>
-                    <div class="case-type"><p3>WEB DEV</p3></div>
-                    <p3>The first iteration of phisheye is a site I 
-                    created to showcase my photography. I used inpsiration from tumblr themes for the format.
-                    This site brought me some paid photography work! I am in the process of launching a second, 
-                    updated version.
-                    <div class="view-project"><a href="https://github.com/kiaragil/csc648-848-sw-engineering-SU21-T04">VIEW SITE</a></div>
-                    </p3>
-                    <img src="media/phisheyev1-case.png">
-                </div>
-
-            </div> -->
-            
         </div>
 
         </div>
 
-                <!-- contact -->
        <!-- contact -->
        <div id="contact" class="section contact">
         <div class="title-frame"><h2>contact</h2></div>

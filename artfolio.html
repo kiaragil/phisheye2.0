@@ -19,41 +19,45 @@
     </head>
 
 
-    <body class="change techfolio" onload="document.getElementById('defaultOpen').click(); mobileFormat(); return randomBGColor();">
+    <body class="change fullfolio" onload="document.getElementById('defaultOpen').click(); mobileFormat(); return randomBGColor();">
 
-        <!-- nav -->
-        <div id="navbar" class="nav">
-            <a href="/" id="logo" title="logo">phish<div class="lighter">eye</div></a> 
-            <div class="links">
-            <a href="about" title="about" onclick="toggle()">about</a>
-            <a href="#work" title="work" onclick="toggle()">work</a>
-            <a href="#contact" title="contact" onclick="toggle()">contact</a>
-            <a href="javascript:void(0);" title="Menu" class="icon" onclick="toggle()"><i class="fa-solid fa-bars"></i></a>
+        <div id="landing-section">
+            <!-- nav -->
+                <div id="navbar" class="nav">
+                    <a href="/" id="logo" title="logo">phish<div class="lighter">eye</div></a> 
+                    <div class="links">
+                    <a href="about" title="about" onclick="toggle()">about</a>
+                    <a href="#work" title="work" onclick="toggle()">work</a>
+                    <a href="#contact" title="contact" onclick="toggle()">contact</a>
+                    <a href="javascript:void(0);" title="Menu" class="icon" onclick="toggle()"><i class="fa-solid fa-bars"></i></a>
+                    </div>
+                </div>
+    
+                <div class="top-sec section fullfolio">
+                <div id="folio-title" class="content-frame">
+                    <div class="content folio-desc">
+                        <h3>graphics and illustration</h3>
+                        <p2>These works are a combination of freelance work and personal 
+                            projects. Click on a project for more details.
+                        </p2>
+                    </div>
+    
+                </div>
+                </div>
+            
             </div>
-        </div>
-
-        <!-- intro -->
-        <div class="top-sec section fullfolio">
-        <div id="folio-title" class="content-frame">
-            <div class="content fullfolio">
-                <h2>graphics & illustration</h2>
-                <p2>Hello this is a description of the portfolio you are viewing!</p2>
-            </div>
-
-        </div>
-        </div>
 
         <!-- case studys -->
         <div id="fullfolio" class="section fullfolio">
         <div class="title-frame"></div>
             
             <div class="content-frame">
-                <div class="row">
-                    <div class="content case half L" >
-                        <a href="/cases/uvst.html"></a>
+    
+                    <div class="content case half" >
+                        <a href="/cases/uvst.html">
                             <h2>Un Verano Sin Ti</h2>
                             <div class="case-type"><p3>POSTER GRAPHIC</p3></div>
-                            <img src="media/uvst.png">
+                            <img src="media/uvst.png" class="hor">
                             <p3>
                                 <div class= "descrip">Off the tailend of a massively sucessful summer, 
                                 I created poster to represent Bad Bunny's 2022 album. 
@@ -62,11 +66,11 @@
                         </a>                     
                     </div>
 
-                    <div class="content case half R">
-                        <a href="/cases/pemc.html"></a>
+                    <div class="content case half">
+                        <a href="/cases/pemc.html">
                             <h2>Phisheye Movie Club</h2>
                             <div class="case-type"><p3>POSTER GRAPHIC</p3></div>                      
-                            <img src="media/pemc.png">
+                            <img src="media/pemc.png" class="hor">
                             <p3>
                                 <div class= "descrip">This poster was created to promote a series of movie nights
                                 hosted during the first year of the pandemic.</div>
@@ -74,27 +78,27 @@
                         </a>  
                     </div>
 
-                </div>
-
-                <div class="row">
-                    <div class="content case half L">
-                        <a href="/cases/blank">
-                            <h2>CASE TITLE</h2>
-                            <div class="case-type"><p3>CASE TYPE</p3></div>
-                            <img src="media/test400x325.png">
+                    <div class="content case half">
+                        <a href="/cases/hfm">
+                            <h2>High From Mars</h2>
+                            <div class="case-type"><p3>LOGO/ILLUSTRATION</p3></div>
+                            <img src="media/mars-logo-test.jpg" class="hor">
                             <p3>
-                                <div class= "descrip">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna
-                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>                        
+                                <div class= "descrip">The logo concepts and icon illustrations
+                                were created for a twitch streaming account. The client requested icons 
+                                that showcased their gaming equipment and their love for football.
+
+                                <p>The art went through several iterations. 
+                                The client was a fan of all and ultimately used them all interchangably.</p>
+                                </div>                        
     
                             </p3>   
-                        </a>  
+                        </a> 
                         
                     </div>
 
 
-                    <div class="content case half R">
+                    <div class="content case half">
                         <a href="/cases/blank">
                             <h2>CASE TITLE</h2>
                             <div class="case-type"><p3>CASE TYPE</p3></div>
@@ -108,8 +112,6 @@
                             </p3>   
                         </a>  
                     </div>
-
-                </div>
             </div>  
             
             <!-- <div class="row">

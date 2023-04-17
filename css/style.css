@@ -41,8 +41,8 @@ h3 {
 }
 
 h4 {
-    font-size: 20px;  
-    line-height: 20px;
+    font-size: 18px;  
+    line-height: 18px;
 
 }
 
@@ -106,6 +106,9 @@ a {
     z-index: 5;
     padding: 10px 0px; /* T R D L */
     overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+
     background-color: #a4cd8e;
     outline-style: solid;
     outline-color:  #80a46c;
@@ -115,6 +118,13 @@ a {
 .title-frame h2 {
     margin: 0;
     padding: 7px 28px;
+    width: max-content;
+}
+
+.title-frame p1 {
+    margin: 0;
+    padding: 7px 28px;
+    color:  #80a46c;
     width: max-content;
 }
 
@@ -216,6 +226,10 @@ a:hover {
         margin: 0;
         padding: 3px 18px;
     }
+
+    .title-frame p1 {
+        display: none;
+    }
     
     .content-frame {
         width: auto;
@@ -267,10 +281,6 @@ a:hover {
     outline-width: thin;
     
     /* box-shadow: 15px 15px #282525; */
-}
-
-.nh .nav {
-    margin-top: 75px;
 }
 
 .nav .links {
@@ -391,11 +401,15 @@ a:hover {
 
 #landing-section {
     width: 1000px;
-    margin-top: 10%;
+    margin-top: 5%;
     display: flex;
     flex-direction: column;
     align-self: center;
     box-shadow: 13px 13px 2px #282525;
+}
+
+.index #landing-section {
+    margin-top: 10%;
 }
 
 /*INTRO */
@@ -463,9 +477,8 @@ a:hover {
         flex-direction: unset;
         align-self: unset;
         box-shadow: unset;
+        margin-top: unset;
     }
-
-    .row { flex-direction: column; } 
 
     #landing {
         max-height: 100vh;
@@ -629,6 +642,8 @@ a:hover {
 .tabcontent {
     display: none;
     height: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .buttons {
@@ -643,12 +658,15 @@ a:hover {
 #creative {background-color: #eae6d6;}
 
 
-.row { display: flex; } 
-
+.cases {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ } 
 
 .case.half{
-    flex: 1 1 50%;
-    padding: 35px 30px;
+    flex: 1 2 46%;
+    padding: 25px 20px;
     outline-style: solid;
     outline-color:  #d7d3c0;
     outline-width: thin;
@@ -699,12 +717,19 @@ a:hover {
 }
 
 .case.half .hor, .case.post .hor {
+    width: 80%;
     display: flex;
     align-self: center;
     margin-left: auto;
     margin-right: auto;
     
 }
+
+.case.post .hor {
+    width: 50%;
+}
+
+
 
 @media screen and (max-width: 840px) {
 
@@ -818,31 +843,30 @@ a:hover {
 
 .contact a { padding: 0px 15px;}
 
-
-.techfolio .content-frame, .artfolio .content-frame {
-    flex-direction: column;
-}
-
 #fullfolio .title-frame{
     height: 30px;
     padding: unset;
 }
 
 
-.content.fullfolio {
-    flex-direction: column;
-    align-items: center;
+.content.folio-desc {
     padding: 15px 0px 25px 30px;
 
     
 }
 
-/* .content.fullfolio h3 {
-    
-} */
+.fullfolio .content-frame {      
+    flex-wrap: wrap;
+}
 
-.content.fullfolio p2 {
-    width: 65%;
+
+.content.folio-desc h3 {
+    margin: 15px 0px;
+}
+
+.content.folio-desc p2 {
+    display: block;
+    width: 75%;
 
 }
 
