@@ -486,6 +486,10 @@ a:hover {
         z-index: 10;
     }
 
+    .index #landing-section {
+        margin-top: unset;
+      }
+
     .content-frame .intro{ outline-style: unset;}
 
     .content.intro, .content.experience {
