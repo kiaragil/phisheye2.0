@@ -854,9 +854,12 @@ a:hover {
 
 
 .content.folio-desc {
-    padding: 15px 0px 25px 30px;
+    margin: 20px auto 20px auto;
+}
 
-    
+.content.folio-desc p1 {
+    display: block;
+    width: 75%;
 }
 
 .fullfolio .content-frame {      
@@ -864,15 +867,6 @@ a:hover {
 }
 
 
-.content.folio-desc h3 {
-    margin: 15px 0px;
-}
-
-.content.folio-desc p2 {
-    display: block;
-    width: 75%;
-
-}
 
 @media screen and (max-width: 840px) {
 

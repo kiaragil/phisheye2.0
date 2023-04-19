@@ -1,68 +1,48 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>phisheye, a personal website</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>coding & webdev</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Shrikhand&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Righteous&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Righteous&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">
 
-        <script src="js/style.js"></script>
-        <script src="https://kit.fontawesome.com/2415949e85.js" crossorigin="anonymous"></script>
-    </head>
+    <script src="js/style.js"></script>
+    <script src="https://kit.fontawesome.com/2415949e85.js" crossorigin="anonymous"></script>
+</head>
 
 
-    <body class="change fullfolio" onload="document.getElementById('defaultOpen').click(); mobileFormat(); return randomBGColor();">
+<body class="change fullfolio" onload="document.getElementById('defaultOpen').click(); mobileFormat(); return randomBGColor();">
 
-        <div id="landing-section">
-        <!-- nav -->
-            <div id="navbar" class="nav">
-                <a href="/" id="logo" title="logo">phish<div class="lighter">eye</div></a> 
-                <div class="links">
-                <a href="about" title="about" onclick="toggle()">about</a>
-                <a href="#work" title="work" onclick="toggle()">work</a>
-                <a href="#contact" title="contact" onclick="toggle()">contact</a>
-                <a href="javascript:void(0);" title="Menu" class="icon" onclick="toggle()"><i class="fa-solid fa-bars"></i></a>
-                </div>
+    <div id="landing-section">
+    <!-- nav -->
+        <div id="navbar" class="nav">
+            <a href="/" id="logo" title="logo">phish<div class="lighter">eye</div></a> 
+            <div class="links">
+            <a href="about" title="about" onclick="toggle()">about</a>
+            <a href="/#work" title="work" onclick="toggle()">work</a>
+            <a href="/#contact" title="contact" onclick="toggle()">contact</a>
+            <a href="javascript:void(0);" title="Menu" class="icon" onclick="toggle()"><i class="fa-solid fa-bars"></i></a>
             </div>
-
-            <div class="top-sec section fullfolio">
-            <div id="folio-title" class="content-frame">
-                <div class="content folio-desc">
-                    <h3>coding & web dev</h3>
-                    <p2>These works range from freelance jobs, university projects, 
-                        and personal projects. Click on a project for more details.
-                    </p2>
-                </div>
-
-            </div>
-            </div>
-        
         </div>
-        <div id="fullfolio" class="section fullfolio">
-        <div class="title-frame"></div>
-            
+
+        <div class="top-sec section folio">
+
+            <div id="fullfolio" class="fullfolio">
             <div class="content-frame">
 
                 <div class="content case half" >
                     <a href="/cases/sunnsf">
                     <h2>S.U.N.N.</h2>
                     <div class="case-type"><p3>WEB DEV</p3></div>                    
-                    <img src="media/sunnsforg-case.png">
-                    <p3>
-                        <div class= "descrip">S.U.N.N. is a San Francisco organization dedicated 
-                        to empowering residents through garden education and food literacy.
-                        I was approached to develop and launch a website that was informative 
-                        and accesible to all. I also helped developed their logo that appears throughout 
-                        the site.</div>
-                    </p3>       
+                    <img src="media/sunnsforg-case.png">   
                     </a>
                 </div>
 
@@ -71,12 +51,6 @@
                     <h2>UniTea</h2>
                     <div class="case-type"><p3>SOFTWARE DEV/WEB DEV</p3></div>
                     <img src="media/unitea-case.png">
-                    <p3>
-                        <div class= "descrip">UniTea is a web app developed for a final group project. It's purpose was to promote university
-                        study groups in a post-COVID setting. Users could make accounts, make and interact with posts,
-                        and even customize their profile. I acted as a member of the back-end team and as project lead. 
-                        It was hosted using AWS EC2.</div>
-                    </p3>   
                     </a>
                 </div>
 
@@ -85,11 +59,6 @@
                     <h2>Hoply</h2>                  
                     <div class="case-type"><p3>SOFTWARE DEV/WEB DEV</p3></div>
                     <img src="media/hoply-case.png">
-                    <p3>
-                        <div class= "descrip">Hoply is a project made to practice
-                        CRUD operations. It is is a very simple text-based social media. Users were able to create an
-                        account and then make, edit, react to- posts. I developed the app on Android studio with Java and SQL.</div>
-                    </p3>
                     </a>
                 </div>
 
@@ -98,12 +67,7 @@
                     <h2>phisheye 1.0</h2>
                     <div class="case-type"><p3>WEB DEV</p3></div>
                     <img src="media/phisheyev1-case.png">
-                    <p3>
-                        <div class= "descrip">The first iteration of phisheye is a site I 
-                        created to showcase my photography. I used inpsiration from tumblr themes for the format.
-                        This site brought me some paid photography work! I am in the process of launching a second, 
-                        updated version.</div>
-                    </p3> 
+
                     </a>
                 </div>
 
@@ -112,9 +76,6 @@
                     <h2>Ontitama</h2>
                     <div class="case-type"><p3>SOFTWARE DEV</p3></div>
                     <img src="media/onitama.jpg">
-                    <p3>
-                        <div class= "descrip"></div>
-                    </p3> 
                     </a>
                 </div>
 
@@ -123,30 +84,28 @@
                     <h2>Tank Game</h2>
                     <div class="case-type"><p3>SOFTWARE DEV</p3></div>
                     <img src="media/tankgame.jpg">
-                    <p3>
-                        <div class= "descrip"></div>
-                    </p3> 
                     </a>
                 </div>
-                
-            </div>  
+        
+            </div>  <!-- content frame -->
+            </div> <!-- folio -->
+        
+        </div> <!-- top sec -->
+    
+    </div> <!-- landing -->
+    
+    <div id="contact" class="section contact">
+    <div class="title-frame"><h2>contact</h2></div>
+    <div class="content-frame">
+        <div class="content contact">
+            <div class="cbtn"><p1><a href="mailto:kiaragil415@gmail.com">email.</a></p1></div>
+            <div class="cbtn"><p1><a href="http://github.com/kiaragil">github.</a></p1></div>
+            <div class="cbtn"><p1><a href="https://www.linkedin.com/in/kiaragil/">linkedin.</a></p1></div>
+            <div class="cbtn"><p1><a href="https://www.instagram.com/phisheye_/">instagram.</a></p1></div>
+            <div class="cbtn"><p1><a href="https://letterboxd.com/bizarro_kiara/">letterboxd.</a></p1></div>
         </div>
+    </div>
+    </div>
 
-        </div>
-
-       <!-- contact -->
-       <div id="contact" class="section contact">
-        <div class="title-frame"><h2>contact</h2></div>
-        <div class="content-frame">
-            <div class="content contact">
-                <div class="cbtn"><p1><a href="mailto:kiaragil415@gmail.com">email.</a></p1></div>
-                <div class="cbtn"><p1><a href="http://github.com/kiaragil">github.</a></p1></div>
-                <div class="cbtn"><p1><a href="https://www.linkedin.com/in/kiaragil/">linkedin.</a></p1></div>
-                <div class="cbtn"><p1><a href="https://www.instagram.com/phisheye_/">instagram.</a></p1></div>
-                <div class="cbtn"><p1><a href="https://letterboxd.com/bizarro_kiara/">letterboxd.</a></p1></div>
-            </div>
-        </div>
-        </div>
-
-    </body>
+</body>
 </html>
