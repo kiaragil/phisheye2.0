@@ -13,12 +13,11 @@ function toggle() {
 
 function randomBGColor() {
     var color = '#';
-    var colorCode = ['F6D085','C5CBE3']; // colors
+    var colorCode = ["url('../media/stacked-waves-purple.svg')","url('../media/stacked-waves-yellow.svg')"]; // colors
     var className = document.getElementsByClassName("change"); // class name to random color
-    var i;
-    color += colorCode[Math.floor(Math.random() * colorCode.length)];
   for (var i = 0; i < className.length; i ++) {
-      className[i].style.backgroundColor = color; }
+      className[i].style.backgroundColor = colorCode[Math.floor(Math.random() * colorCode.length)]; 
+  }
 }
 
 function openPage(pageName,elmnt,color) {

@@ -15,7 +15,6 @@
         <link rel="stylesheet" href="css/style.css">
 
         <script src="js/style.js"></script>
-        <script src="js/layout.js"></script>
         <script src="https://kit.fontawesome.com/2415949e85.js" crossorigin="anonymous"></script>
 
         <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
@@ -23,7 +22,7 @@
     </head>
 
 
-    <body class="change index" onload="document.getElementById('defaultOpen').click();">
+    <body class="change index" onload="document.getElementById('defaultOpen').click(); return randomBGColor();">
 
         <!-- landing -->
         <div id="landing">
@@ -33,7 +32,7 @@
                     <a href="/" id="logo" title="logo">phish<div class="lighter">eye</div></a> 
                     <div class="links">
                     <a href="about" title="about" onclick="toggle()">about</a>
-                    <a href="#work" title="work" onclick="toggle()">work</a>
+                    <a href="/#work" title="work" onclick="toggle()">work</a>
                     <a href="/#contact" title="contact" onclick="toggle()">contact</a>
                     <a href="javascript:void(0);" title="Menu" class="icon" onclick="toggle()"><i class="fa-solid fa-bars"></i></a>
                     </div>
@@ -47,7 +46,7 @@
                         <h1>Hi, I'm Kiara!</h1>
                         <p1>I’m on a mission to find the intersection of my artistic and technical skills.</p1>
                     </div>
-                    
+                
                     <div class="content experience">
                         <h3>I have experience in:</h3>
                         <p2>
@@ -67,13 +66,13 @@
 
         <!-- case studys -->
         <div id="work" class="section works">
-        <div class="title-frame"><h2>works</h2> <p1>click a case for more details</p1></div>
+        <div class="title-frame"><h2>works</h2></div>
             
             <div class="tabs content-frame">
 
             <div class="buttons">
-                <div class="tablink L" onclick="openPage('technical', this, '#eae6d6')" id="defaultOpen">technical</div>
-                <div class="tablink R" onclick="openPage('creative', this, '#eae6d6')">creative</div>
+                <div class="tablink L" onclick="openPage('technical', this, '#faf7ea')" id="defaultOpen">technical</div>
+                <div class="tablink R" onclick="openPage('creative', this, '#e8e4d2')">creative</div>
             </div>
 
 

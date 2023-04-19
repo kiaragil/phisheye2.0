@@ -2,7 +2,11 @@
 
 body {
     color: #282525;
-    background-color: #C5CBE3;
+    /* background-color: #C5CBE3; */
+    background-image: url("../media/stacked-waves-purple.svg");
+    background-position:top;
+    background-repeat: no-repeat;
+    margin: 0;
     display: flex;
     flex-direction: column;
     padding-bottom: 125px;
@@ -109,6 +113,9 @@ a {
     display: flex;
     justify-content: space-between;
 
+    background-image: url("../media/stacked-waves-green.svg");
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: #a4cd8e;
     outline-style: solid;
     outline-color:  #80a46c;
@@ -121,12 +128,12 @@ a {
     width: max-content;
 }
 
-.title-frame p1 {
+/* .works p1 {
     margin: 0;
     padding: 7px 28px;
-    color:  #80a46c;
+    color:  #e4ebe1;
     width: max-content;
-}
+} */
 
 .content-frame {
     height: auto;
@@ -134,9 +141,9 @@ a {
     margin-top: 1px;
     display: flex;
     flex-wrap: nowrap;
-    background-color: #eae6d6;
+    background-color: #faf7ea;
     outline-style: solid;
-    outline-color:  #d7d3c0;
+    outline-color:  #e8e4d2;
     outline-width: thin;
     position: relative;
     z-index: 4;
@@ -157,6 +164,12 @@ a:hover {
 
 
 @media screen and (max-width: 840px) {
+
+    body {
+        background-color: #C5CBE3;
+        background-image: unset;
+    }
+
     .hor {
         max-width: 90%;
     }
@@ -211,10 +224,6 @@ a:hover {
         margin-top: 60px;
         margin-bottom: 0px;
     }
-
-    .section.top-sec.index {
-        margin-top: 35%;
-    }
     
     .title-frame {
         text-align: center;
@@ -232,6 +241,8 @@ a:hover {
     }
     
     .content-frame {
+        background-image: url('../media/wave-haikei.svg');
+        background-position:bottom;
         width: auto;
         margin-top: 1px;
         display: flex;
@@ -275,6 +286,9 @@ a:hover {
     position: relative;
     z-index: 5;
 
+    background-image: url("../media/stacked-waves-green.svg");
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: #a4cd8e;
     outline-style: solid;
     outline-color:  #80a46c;
@@ -350,6 +364,8 @@ a:hover {
 
 @media screen and (max-width: 840px) {
 
+    .nav.responsive { background-image: none;}
+
     .nav .links {
         padding-right: unset;
       }
@@ -416,7 +432,7 @@ a:hover {
 
 .content-frame .intro {
     outline-style: solid;
-    outline-color:  #c9c3aa;
+    outline-color:  #e8e4d2;
     outline-width: thin;
     flex: 1 1 70%;
     display: flex;
@@ -442,7 +458,7 @@ a:hover {
 /*EXPERIENCE*/
 .content-frame .experience {
     outline-style: solid;
-    outline-color:  #c9c3aa;
+    outline-color:  #e8e4d2;
     outline-width: thin;
     height: auto;
     flex: 1 1 30%;
@@ -488,21 +504,23 @@ a:hover {
 
     .index #landing-section {
         margin-top: unset;
-      }
+    }
 
-    .content-frame .intro{ outline-style: unset;}
+    /* .section.top-sec.index {
+        margin-top: 10%;
+    } */
 
-    .content.intro, .content.experience {
+    .content.intro {
         width: 100%;
-        padding: 15px;
         display: flex;
+        padding: 28vh 0px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .section.index {
-        margin-top: 50px;
+    .content.experience {
+        display: none;
     }
 
     .intro h1, .experience h3{
@@ -534,8 +552,8 @@ a:hover {
         color:#282525;
         display: flex;
         align-self: center;
-        font-size: 6vh;
-        margin: 35px auto;
+        font-size: 8vh;
+        margin: 2vh auto;
 
     }
 
@@ -657,22 +675,23 @@ a:hover {
 }
 
 
-#technical {background-color: #eae6d6;}
+/* #technical {background-color: #faf7ea;}
 
-#creative {background-color: #eae6d6;}
+#creative {background-color: #faf7ea;} */
 
 
 .cases {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-image: url('../media/wave-haikeiB.svg')
  } 
 
 .case.half{
     flex: 1 2 46%;
     padding: 25px 20px;
     outline-style: solid;
-    outline-color:  #d7d3c0;
+    outline-color:  #e8e4d2;
     outline-width: thin;
      
 }
@@ -827,6 +846,11 @@ a:hover {
 }
 
 /* .button p1 { width: max-content;} */
+
+.contact{
+    background-position: center;
+    background-image: url("../media/wave-haikei.svg");
+}
 
 .content-frame .fbtn {
     flex: 30%;
