@@ -241,6 +241,7 @@ a:hover {
     
     .content-frame {
         background-image: url('../media/wave-haikei.svg');
+        background-size: cover;
         background-position:bottom;
         width: auto;
         flex-direction: column;
@@ -328,8 +329,29 @@ a:hover {
     background-color: transparent;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 414px) {
+    #logo {
+        width: 20vh;
+        float: left;
+        position: absolute;
+        top: -2px;
+        left: -10px;
+    }
+}
 
+@media screen and (max-width: 840px) and (min-width: 415px){
+
+    #logo {
+        width: 20vh;
+        float: left;
+        position: absolute;
+        top: -4px;
+        left: -5px;
+    }
+
+}
+
+@media screen and (max-width: 840px) {
     .nav {
         width: 100%;
         position: fixed;
@@ -338,14 +360,6 @@ a:hover {
         right: 0;
         box-shadow: none;
         justify-content: end;
-    }
-
-    #logo {
-        width: 45%;
-        float: left;
-        position: absolute;
-        top: 0;
-        left: -5px;
     }
 
     .nav .links {display: none;}
