@@ -12,7 +12,6 @@ function toggle() {
 }
 
 function randomBGColor() {
-    var color = '#';
     var colorCode = ["url('../media/stacked-waves-purple.svg')","url('../media/stacked-waves-yellow.svg')"]; // colors
     var className = document.getElementsByClassName("change"); // class name to random color
   for (var i = 0; i < className.length; i ++) {
@@ -33,3 +32,23 @@ function openPage(pageName,elmnt,color) {
     document.getElementById(pageName).style.display = "flex";
     elmnt.style.backgroundColor = color;
   }
+
+// Modal Setup
+var modal = document.getElementById('modal');
+
+var modalClose = document.getElementById('modal-close');
+modalClose.addEventListener('click', function() { 
+  modal.style.display = "none";
+});
+
+// global handler
+document.addEventListener('click', function (e) { 
+  if (e.target.className.indexOf('modal-target') !== -1) {
+      var img = e.target;
+      var modalImg = document.getElementById("modal-content");
+      // var captionText = document.getElementById("modal-caption");
+      modal.style.display = "block";
+      modalImg.src = img.src;
+      // captionText.innerHTML = img.alt;
+   }
+});
