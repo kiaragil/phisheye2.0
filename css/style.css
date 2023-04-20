@@ -215,7 +215,7 @@ a:hover {
     .section {
         z-index: 1;
         width: 100%;
-        margin-top: 25px;
+        margin-top: 0px;
         box-shadow: none;
     }
     
@@ -332,7 +332,7 @@ a:hover {
     .nav {
         width: 100%;
         position: fixed;
-        z-index: 2;
+        z-index: 5;
         left: 0;
         right: 0;
         box-shadow: none;
@@ -364,7 +364,9 @@ a:hover {
 
 @media screen and (max-width: 840px) {
 
-    .nav.responsive { background-image: none;}
+    .nav.responsive { 
+        background-image: none;
+    }
 
     .nav .links {
         padding-right: unset;
@@ -372,7 +374,7 @@ a:hover {
 
     .nav.responsive .icon {
         position: fixed;
-        right: 7px;
+        right: 3px;
         top: 1px;
     }
 
@@ -387,7 +389,7 @@ a:hover {
         justify-content: start;
         position: fixed;
         padding-top: 198px;
-        z-index: 3;
+        z-index: 5;
     }
 
     .nav.responsive a {
@@ -513,7 +515,7 @@ a:hover {
     .content.intro {
         width: 100%;
         display: flex;
-        padding: 28vh 0px;
+        padding: 35vh 0px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -553,8 +555,9 @@ a:hover {
         display: flex;
         align-self: center;
         font-size: 8vh;
-        margin: 2vh auto;
-
+        margin: 85vh auto;
+        position: absolute;
+        z-index: 4;
     }
 
     .floating { 
