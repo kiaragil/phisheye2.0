@@ -115,7 +115,7 @@ a {
     justify-content: space-between;
 
     background-image: url("../media/stacked-waves-green.svg");
-    background-position: center;
+    background-position:bottom;
     background-repeat: no-repeat;
     background-color: #a4cd8e;
     outline-style: solid;
