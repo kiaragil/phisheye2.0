@@ -174,7 +174,7 @@ a:hover {
     body {
         position: relative;
         margin: 1px;
-        padding-bottom: 50px;
+        padding-bottom: 15px;
     }
 
     h1 {
@@ -208,7 +208,7 @@ a:hover {
     .section {
         z-index: 1;
         width: 100%;
-        margin-top: 0px;
+        margin-top: 12px;
         box-shadow: none;
     }
     
