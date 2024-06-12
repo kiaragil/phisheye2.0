@@ -1,0 +1,62 @@
+@keyframes float {
+    0% {
+        transform: translateX(-50vw); /* Start cloud off-screen to the left */
+    }
+    100% {
+        transform: translateX(100vw); /* Move cloud off-screen to the right */
+    }
+}
+
+.cloud {
+    display: block; /* By default, show clouds */
+    position: absolute;
+    width: 350px;
+    height: 120px;
+    background: #ECEFF1;
+    box-shadow: 10px 10px #b95631;
+    border-radius: 100px;
+}
+
+.cloud::after,
+.cloud::before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    border-radius: inherit;
+}
+
+.cloud::after {
+    width: 100px;
+    height: 100px;
+    top: -40px; /* Adjusted vertical spacing */
+    left: 50px;
+}
+
+.cloud::before {
+    width: 180px;
+    height: 180px;
+    top: -60px; /* Adjusted vertical spacing */
+    left: 130px;
+}
+
+.cloud1 {
+    top: 30%; /* Adjusted vertical positioning */
+    animation: float 30s linear infinite;
+}
+
+.cloud2 {
+    top: 50%; /* Adjusted vertical positioning */
+    animation: float 25s linear infinite;
+}
+
+.cloud3 {
+    top: 70%; /* Adjusted vertical positioning */
+    animation: float 35s linear infinite;
+}
+
+/* Hide clouds on small screens */
+@media screen and (max-width: 768px) {
+    .cloud {
+        display: none;
+    }
+}
