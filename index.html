@@ -81,10 +81,8 @@
             <label for="ShippingAddress">Shipping Address:</label>
             <input name="Address" type="text" id="shippingAddressInput" placeholder="Enter your address..." aria-label="Shipping Address">
         </div>
-
-
     
-        <button type="submit">Send</button>
+        <button type="submit" id="submitButton">Send</button>
     </form>
 
     </div>
@@ -92,6 +90,13 @@
     <script>
        // Add event listener to the shipping dropdown to call the function when its value changes
         document.getElementById("Shipping").addEventListener("change", toggleShippingAddressField);
+                const form = document.getElementById("myForm");
+        const submitButton = document.getElementById("submitButton");
+
+        form.addEventListener("submit", function (event) {
+            submitButton.disabled = true;
+            submitButton.innerText = "Sending...";
+        });
     </script>
 </body>
 </html>
