@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Layout</title>
-    <link rel="stylesheet" href="postyle.css">
-    <link rel="stylesheet" href="cloud.css">
+    <link rel="stylesheet" href="css/postyle.css">
+    <link rel="stylesheet" href="css/cloud.css">
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUT3eUyJj4huaLXZrqQnB3XrFSDvwf80Y&libraries=places"></script>
-    <script src="poscript.js"></script>
+    <script src="js/poscript.js"></script>
 </head>
 <body>
 
@@ -22,7 +22,7 @@
                     method: 'POST',
                     body: data,
                 }).then(() => {
-                    window.location.replace('thankyou.html')
+                    window.location.replace('thankyou')
                 })
             })
         }); 
