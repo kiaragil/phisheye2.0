@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TLDSF Pre-Order Portal</title>
-    <link rel="stylesheet" href="css/postyle.css">
-    <link rel="stylesheet" href="css/cloud.css">
+    <title>Form Layout</title>
+    <link rel="stylesheet" href="postyle.css">
+    <link rel="stylesheet" href="cloud.css">
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUT3eUyJj4huaLXZrqQnB3XrFSDvwf80Y&libraries=places"></script>
-    <script src="js/poscript.js"></script>
+    <script src="poscript.js"></script>
 </head>
 <body>
 
@@ -22,7 +22,7 @@
                     method: 'POST',
                     body: data,
                 }).then(() => {
-                    window.location.replace('thankyou')
+                    window.location.replace('thankyou.html')
                 })
             })
         }); 
@@ -35,12 +35,16 @@
     </div>
 
     <div class="title">PRE-ORDER "TO LIVE AND DIE IN SF"</div>
-
+    <div class="subtitle"><p>25 USD. 8.25in. x 8.25 in., 68pp. 80lb satin pages, 100lb matte cover.</p></div>
+    
     <div class="container">
     
     <div class="image-container">
-    <img src="media/cover.jpg" alt="Placeholder Image">
+        <img src="cover.jpg" alt="Book Cover">
     </div>
+
+    
+        
 
     <form method="POST" action="https://script.google.com/macros/s/AKfycby5rRN0ihx2U_lM0s3r0kYVKlt_-o9YLepcJ-3KQq38kenA8fkqPCZVGc2DvD2L-0fSAQ/exec" id="myForm">
 
@@ -81,6 +85,8 @@
             <label for="ShippingAddress">Shipping Address:</label>
             <input name="Address" type="text" id="shippingAddressInput" placeholder="Enter your address..." aria-label="Shipping Address">
         </div>
+
+
     
         <button type="submit" id="submitButton">Send</button>
     </form>
@@ -90,7 +96,8 @@
     <script>
        // Add event listener to the shipping dropdown to call the function when its value changes
         document.getElementById("Shipping").addEventListener("change", toggleShippingAddressField);
-                const form = document.getElementById("myForm");
+
+        const form = document.getElementById("myForm");
         const submitButton = document.getElementById("submitButton");
 
         form.addEventListener("submit", function (event) {
