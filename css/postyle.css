@@ -31,6 +31,18 @@ body {
     padding-bottom: 30px;
 }
 
+.subtitle {
+    position: absolute;
+    top: 4vw;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5vw; /* Set font size proportional to viewport width */
+    color: white;
+    z-index: 100;
+    white-space: nowrap; /* Prevent text from wrapping */
+    padding-bottom: 30px;
+}
+
 .background {
     position: absolute;
     top: 0;
@@ -39,6 +51,7 @@ body {
     height: 100%;
     z-index: -1;
 }
+
 
 .container {
     display: flex;
@@ -50,9 +63,12 @@ body {
     padding: 20px 60px; /* Increase horizontal padding */
 }
 
+
+
 .image-container {
     flex: 1;
     display: flex;
+    position: relative;
     align-items: center;
     margin-right: 5px; /* Increase space between image-container and form */
 }
@@ -151,10 +167,17 @@ option {
 @media screen and (max-width: 600px) {
     .title {
         font-size: 5vw;
-        top: 10px; /* Adjust top position */
+        top: 30px; /* Adjust top position */
         margin-bottom: 10px; /* Adjust margin to create space between title and img */
     }
 
+    .subtitle {
+        padding-left: 3vw;
+        padding-right: 3vw;
+        font-size: 3vw;
+        top: 40px; /* Adjust top position */
+        margin-bottom: 10px; /* Adjust margin to create space between title and img */
+    }
     .container {
         flex-direction: column;
         align-items: center; /* Center align items */
