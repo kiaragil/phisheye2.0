@@ -1,11 +1,38 @@
-@keyframes float {
+/* Keyframe animation for the first cloud */
+@keyframes float1 {
   0% {
     transform: translateX(-50vw);
     /* Start cloud off-screen to the left */
   }
 
   100% {
-    transform: translateX(100vw);
+    transform: translateX(50vw);
+    /* Move cloud off-screen to the right */
+  }
+}
+
+/* Keyframe animation for the second cloud */
+@keyframes float2 {
+  0% {
+    transform: translateX(-25vw);
+    /* Start cloud off-screen to the left */
+  }
+
+  100% {
+    transform: translateX(50vw);
+    /* Move cloud off-screen to the right */
+  }
+}
+
+/* Keyframe animation for the third cloud */
+@keyframes float3 {
+  0% {
+    transform: translateX(-12vw);
+    /* Start cloud off-screen to the left */
+  }
+
+  100% {
+    transform: translateX(50vw);
     /* Move cloud off-screen to the right */
   }
 }
@@ -45,22 +72,23 @@
   left: 130px;
 }
 
+
 .cloud1 {
   top: 30%;
   /* Adjusted vertical positioning */
-  animation: float 30s linear infinite;
+  animation: float1 35s linear infinite;
 }
 
 .cloud2 {
   top: 50%;
   /* Adjusted vertical positioning */
-  animation: float 25s linear infinite;
+  animation: float2 30s linear infinite;
 }
 
 .cloud3 {
   top: 70%;
   /* Adjusted vertical positioning */
-  animation: float 35s linear infinite;
+  animation: float3 40s linear infinite;
 }
 
 /* Make clouds smaller for mobile screens */
@@ -82,5 +110,23 @@
     height: 90px;
     top: -35px;
     left: 80px;
+  }
+
+  .cloud1 {
+    top: 30%;
+    /* Adjusted vertical positioning */
+    animation: float1 20s linear infinite;
+  }
+
+  .cloud2 {
+    top: 50%;
+    /* Adjusted vertical positioning */
+    animation: float2 15s linear infinite;
+  }
+
+  .cloud3 {
+    top: 70%;
+    /* Adjusted vertical positioning */
+    animation: float3 25s linear infinite;
   }
 }
