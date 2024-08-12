@@ -1,0 +1,55 @@
+/* Mobile Styles */
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 4vw;
+    top: 9vw;
+    /* Adjust top position */
+    margin-bottom: 10px;
+    /* Adjust margin to create space between title and img */
+  }
+
+  .subtitle {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    font-size: 3vw;
+    top: 12vw;
+    /* Adjust top position */
+    margin-bottom: 10px;
+    /* Adjust margin to create space between title and img */
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    /* Center align items */
+    width: 90%;
+    padding: 10px 20px;
+    margin-top: 22vw;
+    /* Add top margin to create space between title and container */
+  }
+
+  .image-container {
+    width: 100%;
+    max-width: 300px;
+    /* Adjust max-width for better fit */
+    margin-bottom: 20px;
+    /* Adjust margin to create space between image-container and form */
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+    /* Maintain aspect ratio */
+  }
+
+  form {
+    width: 85%;
+    /* Full width */
+    margin-left: 0;
+    /* Align form to the center */
+    margin-right: 0;
+    /* Align form to the center */
+    margin-top: 20px;
+    /* Add margin to create space between form and title */
+  }
+}
