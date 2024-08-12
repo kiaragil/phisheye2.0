@@ -184,6 +184,15 @@
       window.onload = function () {
         initAutocomplete();
       };
+
+      // Add event listener to the shipping dropdown to call the function when its value changes
+    document.getElementById("Shipping").addEventListener("change", toggleShippingAddressField);
+    const form = document.getElementById("myForm");
+    const submitButton = document.getElementById("submitButton");
+    form.addEventListener("submit", function (event) {
+      submitButton.disabled = true;
+      submitButton.innerText = "Sending...";
+    });
     </script>
   </body>
 </html>
