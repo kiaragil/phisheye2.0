@@ -1,19 +1,3 @@
-// Handle form submission
-window.addEventListener("DOMContentLoaded", function () {
-    const yourForm = document.getElementById("myForm");
-    yourForm.addEventListener("submit", function (e) {
-        e.preventDefault();
-        const data = new FormData(yourForm);
-        const action = e.target.action;
-        fetch(action, {
-            method: "POST",
-            body: data,
-        }).then(() => {
-            window.location.replace("thankyou");
-        });
-    });
-});
-
 function togglePaymentField() {
     var paymentTypeSelect = document.getElementById("PaymentType");
     var paymentField = document.getElementById("paymentField");
