@@ -21,21 +21,33 @@
   </head>
 
   <body>
-    <script type="text/javascript">
-      window.addEventListener("DOMContentLoaded", function () {
-        const yourForm = document.getElementById("myForm");
-        yourForm.addEventListener("submit", function (e) {
-          e.preventDefault();
-          const data = new FormData(yourForm);
-          const action = e.target.action;
-          fetch(action, {
-            method: "POST",
-            body: data,
-          }).then(() => {
-            window.location.replace("thankyou");
-          });
-        });
+    <script>
+    window.addEventListener("DOMContentLoaded", function () {
+    const yourForm = document.getElementById('myForm');
+    const submitButton = document.getElementById('submitButton');
+    
+    yourForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      
+    // Change button text and disable it
+    submitButton.textContent = 'Sending...';
+    submitButton.disabled = true;
+      
+    const data = new FormData(yourForm);
+    const action = e.target.action;
+      
+      fetch(action, {
+        method: 'POST',
+        body: data,
+      }).then(() => {
+        window.location.replace('thankyou');
+      }).catch(() => {
+        // Handle the error (e.g., show an error message)
+        submitButton.textContent = 'Send';
+        submitButton.disabled = false;
       });
+    });
+  }); 
     </script>
 
     <div class="background">
