@@ -1,122 +1,192 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>TLDSF Pre-Order Portal</title>
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="form.css" />
+    <link rel="stylesheet" href="mobile.css" />
+    <link rel="stylesheet" href="cloud.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css"
+    />
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUT3eUyJj4huaLXZrqQnB3XrFSDvwf80Y&libraries=places"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="js/poscript.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <body>
+    <script type="text/javascript">
+      window.addEventListener("DOMContentLoaded", function () {
+        const yourForm = document.getElementById("myForm");
+        yourForm.addEventListener("submit", function (e) {
+          e.preventDefault();
+          const data = new FormData(yourForm);
+          const action = e.target.action;
+          fetch(action, {
+            method: "POST",
+            body: data,
+          }).then(() => {
+            window.location.replace("thankyou");
+          });
+        });
+      });
+    </script>
 
-  <title>TLDSF Pre-Order Portal</title>
-  <link rel="stylesheet" href="css/postyle.css">
-  <link rel="stylesheet" href="css/cloud.css">
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUT3eUyJj4huaLXZrqQnB3XrFSDvwf80Y&libraries=places"></script>
-  <script src="js/poscript.js"></script>
-</head>
-
-<body>
-
-  <script type="text/javascript">
-    window.addEventListener("DOMContentLoaded", function () {
-      const yourForm = document.getElementById('myForm');
-      yourForm.addEventListener("submit", function (e) {
-        e.preventDefault();
-        const data = new FormData(yourForm);
-        const action = e.target.action;
-        fetch(action, {
-          method: 'POST',
-          body: data,
-        }).then(() => {
-          window.location.replace('thankyou')
-        })
-      })
-    }); 
-  </script>
-
-  <div class="background">
-    <div class="cloud cloud1"></div>
-    <div class="cloud cloud2"></div>
-    <div class="cloud cloud3"></div>
-  </div>
-
-  <div class="title">PRE-ORDER "TO LIVE AND DIE IN SF"</div>
-  <div class="subtitle">
-    <p>38 USD. 8.25in. x 8.25in. 72pp. 80lb satin pages. 100lb matte cover.</p>
-  </div>
-
-  <div class="container">
-
-    <div class="image-container">
-      <img src="media/cover.jpg" alt="Book Cover">
+    <div class="background">
+      <div class="cloud cloud1"></div>
+      <div class="cloud cloud2"></div>
+      <div class="cloud cloud3"></div>
     </div>
 
+    <div class="title">ORDER "TO LIVE AND DIE IN SF"</div>
+    <div class="subtitle">
+      <p>
+        $38.00 (USD), shipping included. 8.25 in. x 8.25 in. 72pp. 80lb satin pages. 100lb matte
+        cover.
+      </p>
+    </div>
 
-
-
-    <form method="POST"
-      action="https://script.google.com/macros/s/AKfycbzf1HzLtv0eQOHrW9OjP-R0ATYokBj605M9145iW9W4aY4Y8GrOQ9lYJKc10SppPVAf/exec"
-      id="myForm">
-
-      <label for="Name">Name:</label>
-      <input name="Name" type="text" placeholder="ex: dolly parton" required aria-label="Name">
-
-      <label for="Email">Email:</label>
-      <input name="Email" type="email" placeholder="dolly@example.com" required aria-label="Email">
-
-      <label for="Number">Phone Number:</label>
-      <input name="Number" type="tel" placeholder="(000) 000-0000" aria-label="Phone Number" id="PhoneNumber">
-
-      <label for="PaymentType">Payment Type:</label>
-      <select name="PaymentType" id="PaymentType" required onchange="togglePaymentField()" aria-label="Payment Type">
-        <option value="" disabled selected hidden>Choose Option...</option>
-        <option value="cash">Cash</option>
-        <option value="paypal">Paypal</option>
-        <option value="cashapp">CashApp</option>
-        <option value="venmo">Venmo</option>
-        <option value="applecash">Apple Cash</option>
-        <option value="trade">Trade</option>
-      </select>
-
-      <div id="paymentField" style="display: none;">
-        <label id="paymentUsernameLabel" for="PaymentUsername">Payment Username:</label>
-        <input name="PaymentUsername" type="text" placeholder="" id="PaymentUsername" aria-label="Payment Username">
-        <div id="formNote">A payment request will be sent to you. Please complete the payment within 2 days.</div>
+    <div class="container">
+      <div class="image-container">
+        <img src="cover.jpg" alt="Book Cover" />
       </div>
 
-      <label for="Shipping">Need it shipped?</label>
-      <select name="Shipping" id="Shipping" required aria-label="Shipping" onchange="toggleShippingField()">
-        <option value="" disabled selected hidden>Choose Option...</option>
-        <option value="yes">Yes</option>
-        <option value="no">No</option>
-      </select>
+      <form
+        method="POST"
+        action="https://script.google.com/macros/s/AKfycbzf1HzLtv0eQOHrW9OjP-R0ATYokBj605M9145iW9W4aY4Y8GrOQ9lYJKc10SppPVAf/exec"
+        id="myForm"
+      >
+        <label for="Name">Name:</label>
+        <input
+          name="Name"
+          type="text"
+          placeholder="chappell roan"
+          required
+          aria-label="Name"
+        />
 
-      <div id="shippingAddressField" style="display: none;">
-        <div id="formNote">There is an extra shipping cost based on where you live. You will be contacted about it.</div>
-        <label for="ShippingAddress">Shipping Address:</label>
-        <input name="Address" type="text" id="shippingAddressInput" placeholder="Enter your address..."
-          aria-label="Shipping Address">
-      </div>
+        <label for="Email">Email:</label>
+        <input
+          name="Email"
+          type="email"
+          placeholder="hottogo@example.com"
+          required
+          aria-label="Email"
+        />
 
-      <label for="Note">Note:</label>
-      <textarea name="Note" id="Note" placeholder="Add a note... (optional)" aria-label="Note"></textarea>
+        <label for="PhoneNumber">Phone Number:</label>
+        <input
+          style="margin-bottom: 10px"
+          name="PhoneNumber"
+          id="PhoneNumber"
+          type="tel"
+          aria-label="Phone Number"
+        />
 
+        <label for="PaymentType">Payment Type:</label>
+        <select
+          name="PaymentType"
+          id="PaymentType"
+          required
+          onchange="togglePaymentField()"
+          aria-label="Payment Type"
+        >
+          <option value="" disabled selected hidden>Choose Option...</option>
+          <option value="cash">Cash</option>
+          <option value="paypal">Paypal</option>
+          <option value="cashapp">CashApp</option>
+          <option value="venmo">Venmo</option>
+          <option value="applecash">Apple Cash</option>
+          <option value="trade">Trade</option>
+        </select>
 
-      <button type="submit" id="submitButton">Send</button>
-    </form>
+        <div id="paymentField" style="display: none">
+          <label id="paymentUsernameLabel" for="PaymentUsername"
+            >Payment Username:</label
+          >
+          <input
+            name="PaymentUsername"
+            type="text"
+            placeholder=""
+            id="PaymentUsername"
+            aria-label="Payment Username"
+          />
+          <div id="formNote">
+            A payment request will be sent to you. Please complete the payment
+            within 2 days.
+          </div>
+        </div>
 
-  </div>
+        <div id="shippingAddressField">
+          <label for="ShippingAddress">Shipping Address:</label>
+          <input
+            name="Address"
+            type="text"
+            id="shippingAddressInput"
+            placeholder="Enter your address..."
+            aria-label="Shipping Address"
+          />
+        </div>
 
-  <script>
-    // Add event listener to the shipping dropdown to call the function when its value changes
-    document.getElementById("Shipping").addEventListener("change", toggleShippingAddressField);
+        <label for="Note">Note:</label>
+        <textarea
+          name="Note"
+          id="Note"
+          placeholder="Add a note... (optional)"
+          aria-label="Note"
+        ></textarea>
 
-    const form = document.getElementById("myForm");
-    const submitButton = document.getElementById("submitButton");
+        <button type="submit" id="submitButton">Send</button>
+      </form>
+    </div>
 
-    form.addEventListener("submit", function (event) {
-      submitButton.disabled = true;
-      submitButton.innerText = "Sending...";
-    });
-  </script>
-</body>
+    <script>
+      // Initialize intl-tel-input
+      document.addEventListener("DOMContentLoaded", function () {
+        var phoneNumberInput = document.getElementById("PhoneNumber");
+        var iti = window.intlTelInput(phoneNumberInput, {
+          separateDialCode: true,
+          preferredCountries: ["us", "gb"],
+          utilsScript:
+            "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
 
+        phoneNumberInput.addEventListener("input", function (event) {
+          var input = event.target.value.replace(/\D/g, "").substring(0, 10);
+          var areaCode = input.substring(0, 3);
+          var middle = input.substring(3, 6);
+          var last = input.substring(6, 10);
+
+          if (input.length > 6) {
+            event.target.value = `(${areaCode}) ${middle}-${last}`;
+          } else if (input.length > 3) {
+            event.target.value = `(${areaCode}) ${middle}`;
+          } else if (input.length > 0) {
+            event.target.value = `(${areaCode}`;
+          }
+        });
+      });
+
+      // Initialize Google Maps Places Autocomplete for the shipping address field
+      function initAutocomplete() {
+        var shippingAddressInput = document.getElementById(
+          "shippingAddressInput",
+        );
+        var autocomplete = new google.maps.places.Autocomplete(
+          shippingAddressInput,
+        );
+      }
+
+      // Call initAutocomplete function when the page loads
+      window.onload = function () {
+        initAutocomplete();
+      };
+    </script>
+  </body>
 </html>
