@@ -1,13 +1,18 @@
-function toggleShippingAddressField() {
-    var shippingSelect = document.getElementById("Shipping");
-    var shippingAddressField = document.getElementById("shippingAddressField");
-
-        if (shippingSelect.value === "yes") {
-            shippingAddressField.style.display = "block";
-        } else {
-            shippingAddressField.style.display = "none";
-        }
-} //has listener in html file
+// Handle form submission
+window.addEventListener("DOMContentLoaded", function () {
+    const yourForm = document.getElementById("myForm");
+    yourForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+        const data = new FormData(yourForm);
+        const action = e.target.action;
+        fetch(action, {
+            method: "POST",
+            body: data,
+        }).then(() => {
+            window.location.replace("thankyou");
+        });
+    });
+});
 
 function togglePaymentField() {
     var paymentTypeSelect = document.getElementById("PaymentType");
@@ -38,27 +43,6 @@ function togglePaymentField() {
         phoneNumberInput.required = false;
     }
 }
-
-
-// Add input mask for phone number
-document.addEventListener('DOMContentLoaded', function() {
-    var phoneNumberInput = document.getElementById('PhoneNumber');
-
-    phoneNumberInput.addEventListener('input', function(event) {
-        var input = event.target.value.replace(/\D/g, '').substring(0, 10);
-        var areaCode = input.substring(0, 3);
-        var middle = input.substring(3, 6);
-        var last = input.substring(6, 10);
-
-        if (input.length > 6) {
-            event.target.value = `(${areaCode}) ${middle}-${last}`;
-        } else if (input.length > 3) {
-            event.target.value = `(${areaCode}) ${middle}`;
-        } else if (input.length > 0) {
-            event.target.value = `(${areaCode}`;
-        }
-    });
-});
 
 // Initialize Google Maps Places Autocomplete for the shipping address field
 function initAutocomplete() {
