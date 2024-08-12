@@ -1,0 +1,193 @@
+form {
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 300px;
+  margin-left: 10px;
+}
+
+label {
+  font-size: 12px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  font-size: 12px;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #2c2c2c;
+  color: #e0e0e0;
+}
+
+button {
+  font-size: 12px;
+  width: 100%;
+  background-color: #b95631;
+  color: white;
+  padding: 10px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d44c1c;
+}
+
+select:invalid {
+  color: gray;
+}
+
+option {
+  color: #e0e0e0;
+  font-size: 12px;
+}
+
+#formNote {
+  font-size: 0.70em;
+  color: #999;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.thank-you-container {
+  text-align: center;
+  z-index: 10;
+}
+
+.image-container {
+  margin-bottom: 20px;
+}
+
+.image-container img {
+  width: 400px;
+  height: auto;
+}
+
+.thank-you-message {
+  font-size: 1.2em;
+}
+
+.thank-you-message h1 {
+  margin-bottom: 10px;
+}
+
+.thank-you-message p {
+  font-size: 1em;
+  color: #b3b3b3;
+}
+
+textarea {
+  font-size: 12px;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #2c2c2c;
+  color: #e0e0e0;
+}
+
+/* intl-tel-input Styles */
+.iti {
+  width: 100%;
+  /* Full width to fit the container */
+}
+
+.iti__flag-container,
+.iti__selected-flag,
+.iti__country-list {
+  background-color: #2c2c2c !important;
+  /* Ensure background color for the flag container and country list */
+}
+
+.iti__country {
+  background-color: #1f1f1f !important;
+  /* Background color of list items */
+  color: #e0e0e0 !important;
+  /* Text color */
+  border-bottom: 1px solid #444 !important;
+  /* Border between items */
+  font-size: 12px !important;
+  /* Match font size */
+  font-family: 'Helvetica Neue', 'Segoe UI', Arial, sans-serif !important;
+  /* Match font family */
+}
+
+.iti__country:hover,
+.iti__country.iti__country--active {
+  background-color: #3a3a3a !important;
+  /* Hover and active background color */
+}
+
+.iti__country.iti__country--selected {
+  background-color: #2c2c2c !important;
+  /* Background color for selected item */
+}
+
+.iti__flag-image {
+  border-radius: 4px;
+}
+
+.iti__tel-input input {
+  background-color: #2c2c2c;
+  /* Match the background color */
+  color: #e0e0e0;
+  /* Match the text color */
+  border: 1px solid #444;
+  /* Border color */
+  border-radius: 4px;
+  padding: 8px;
+  /* Match padding */
+  font-size: 12px;
+  /* Match font size */
+}
+
+.iti__tel-input input:focus {
+  border-color: #b95631;
+  /* Highlight border on focus */
+  outline: none;
+  /* Remove default outline */
+}
+
+.iti.iti--allow-dropdown.iti--separate-dial-code {
+  margin-bottom: 10px;
+}
+
+/* Payment Dropdown Styles */
+select {
+  font-size: 12px;
+  font-family: 'Helvetica Neue', 'Segoe UI', Arial, sans-serif;
+  background-color: #2c2c2c;
+  /* Match the background color */
+  color: #e0e0e0;
+  /* Match the text color */
+  border: 1px solid #444;
+  /* Match the border color */
+  border-radius: 4px;
+  /* Match the border radius */
+  padding: 8px;
+  /* Match the padding */
+}
+
+select option {
+  background-color: #1f1f1f;
+  /* Background color of options */
+  color: #e0e0e0;
+  /* Text color */
+}
+
+select option:hover,
+select option:focus {
+  background-color: #3a3a3a;
+  /* Hover background color */
+}
