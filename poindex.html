@@ -22,32 +22,34 @@
 
   <body>
     <script>
-    window.addEventListener("DOMContentLoaded", function () {
-    const yourForm = document.getElementById('myForm');
-    const submitButton = document.getElementById('submitButton');
-    
-    yourForm.addEventListener("submit", function (e) {
-      e.preventDefault();
-      
-    // Change button text and disable it
-    submitButton.textContent = 'Sending...';
-    submitButton.disabled = true;
-      
-    const data = new FormData(yourForm);
-    const action = e.target.action;
-      
-      fetch(action, {
-        method: 'POST',
-        body: data,
-      }).then(() => {
-        window.location.replace('thankyou');
-      }).catch(() => {
-        // Handle the error (e.g., show an error message)
-        submitButton.textContent = 'Send';
-        submitButton.disabled = false;
+      window.addEventListener("DOMContentLoaded", function () {
+        const yourForm = document.getElementById("myForm");
+        const submitButton = document.getElementById("submitButton");
+
+        yourForm.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Change button text and disable it
+          submitButton.textContent = "Sending...";
+          submitButton.disabled = true;
+
+          const data = new FormData(yourForm);
+          const action = e.target.action;
+
+          fetch(action, {
+            method: "POST",
+            body: data,
+          })
+            .then(() => {
+              window.location.replace("thankyou");
+            })
+            .catch(() => {
+              // Handle the error (e.g., show an error message)
+              submitButton.textContent = "Send";
+              submitButton.disabled = false;
+            });
+        });
       });
-    });
-  }); 
     </script>
 
     <div class="background">
@@ -58,7 +60,10 @@
 
     <div class="title">ORDER "TO LIVE AND DIE IN SF"</div>
     <div class="subtitle">
-      <p>$38.00 (USD), shipping included. 72pp. 80lb satin pages. 100lb matte cover.</p>
+      <p>
+        $38.00 (USD), shipping included. 72pp. 80lb satin pages. 100lb matte
+        cover.
+      </p>
     </div>
 
     <div class="container">
@@ -182,12 +187,8 @@
         });
       });
 
-    const form = document.getElementById("myForm");
-    const submitButton = document.getElementById("submitButton");
-    form.addEventListener("submit", function (event) {
-      submitButton.disabled = true;
-      submitButton.innerText = "Sending...";
-    });
+
+      });
     </script>
   </body>
 </html>
