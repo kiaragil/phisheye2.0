@@ -19,18 +19,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script src="js/poscript.js"></script>
   </head>
+
   <body>
     <script>
       window.addEventListener("DOMContentLoaded", function () {
         const yourForm = document.getElementById("myForm");
         const submitButton = document.getElementById("submitButton");
+
         yourForm.addEventListener("submit", function (e) {
           e.preventDefault();
+
           // Change button text and disable it
           submitButton.textContent = "Sending...";
           submitButton.disabled = true;
+
           const data = new FormData(yourForm);
           const action = e.target.action;
+
           fetch(action, {
             method: "POST",
             body: data,
@@ -40,17 +45,19 @@
             })
             .catch(() => {
               // Handle the error (e.g., show an error message)
-              submitButton.textContent = "ERROR";
+              submitButton.textContent = "Send";
               submitButton.disabled = false;
             });
         });
       });
     </script>
+
     <div class="background">
       <div class="cloud cloud1"></div>
       <div class="cloud cloud2"></div>
       <div class="cloud cloud3"></div>
     </div>
+
     <div class="title">ORDER "TO LIVE AND DIE IN SF"</div>
     <div class="subtitle">
       <p>
@@ -58,10 +65,12 @@
         cover.
       </p>
     </div>
+
     <div class="container">
       <div class="image-container">
         <img src="media/cover.jpg" alt="Book Cover" />
       </div>
+
       <form
         method="POST"
         action="https://script.google.com/macros/s/AKfycbzf1HzLtv0eQOHrW9OjP-R0ATYokBj605M9145iW9W4aY4Y8GrOQ9lYJKc10SppPVAf/exec"
@@ -75,6 +84,7 @@
           required
           aria-label="Name"
         />
+
         <label for="Email">Email:</label>
         <input
           name="Email"
@@ -83,6 +93,7 @@
           required
           aria-label="Email"
         />
+
         <label for="PhoneNumber">Phone Number:</label>
         <input
           style="margin-bottom: 10px"
@@ -91,6 +102,7 @@
           type="tel"
           aria-label="Phone Number"
         />
+
         <label for="PaymentType">Payment Type:</label>
         <select
           name="PaymentType"
@@ -107,6 +119,7 @@
           <option value="applecash">Apple Cash</option>
           <option value="trade">Trade</option>
         </select>
+
         <div id="paymentField" style="display: none">
           <label id="paymentUsernameLabel" for="PaymentUsername"
             >Payment Username:</label
@@ -123,6 +136,7 @@
             within 2 days.
           </div>
         </div>
+
         <div id="shippingAddressField">
           <label for="ShippingAddress">Shipping Address:</label>
           <input
@@ -133,6 +147,7 @@
             aria-label="Shipping Address"
           />
         </div>
+
         <label for="Note">Note:</label>
         <textarea
           name="Note"
@@ -140,9 +155,11 @@
           placeholder="Add a note... (optional)"
           aria-label="Note"
         ></textarea>
+
         <button type="submit" id="submitButton">Send</button>
       </form>
     </div>
+
     <script>
       // Initialize intl-tel-input
       document.addEventListener("DOMContentLoaded", function () {
@@ -153,11 +170,13 @@
           utilsScript:
             "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
         });
+
         phoneNumberInput.addEventListener("input", function (event) {
           var input = event.target.value.replace(/\D/g, "").substring(0, 10);
           var areaCode = input.substring(0, 3);
           var middle = input.substring(3, 6);
           var last = input.substring(6, 10);
+
           if (input.length > 6) {
             event.target.value = `(${areaCode}) ${middle}-${last}`;
           } else if (input.length > 3) {
