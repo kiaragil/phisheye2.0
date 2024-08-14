@@ -22,8 +22,8 @@ function togglePaymentField() {
         phoneNumberInput.required = false;
     } else if (paymentTypeSelect.value === "applecash") {
         phoneNumberInput.required = true;
-    } else {
         paymentField.style.display = "none";
+    } else {
         phoneNumberInput.required = false;
     }
 }
