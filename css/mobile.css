@@ -8,7 +8,7 @@
   }
 
   .subtitle {
-    font-size: 3.2vw;
+    font-size: 3vw;
     /* top: 8vw; /* Adjust top position to avoid overlap with title */
     padding-top: 7vw; /* Add bottom padding to create space between subtitle and image */
   }
@@ -18,7 +18,7 @@
     align-items: center;
     /* Center align items */
     width: 90%;
-    padding: 10vw 5vw;
+    padding: 13vw 5vw;
     margin-top: 22vw;
     /* Add top margin to create space between title and container */
   }
