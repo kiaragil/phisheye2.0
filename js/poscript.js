@@ -23,8 +23,10 @@ function togglePaymentField() {
     } else if (paymentTypeSelect.value === "applecash") {
         phoneNumberInput.required = true;
         paymentField.style.display = "none";
-    } else {
-        phoneNumberInput.required = false;
+    } 
+    else if (paymentTypeSelect.value === "zelle") {
+        phoneNumberInput.required = true;
+        paymentField.style.display = "none";
     }
 }
 
