@@ -25,23 +25,26 @@ body {
   top: 3vw;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 2vw;
-  color: white;
-  z-index: 100;
-  white-space: nowrap;
-  padding-bottom: 30px;
-}
-
-.subtitle {
-  position: absolute;
-  top: 4vw;
-  left: 50%;
-  transform: translateX(-50%);
   font-size: 1.5vw;
   color: white;
   z-index: 100;
   white-space: nowrap;
-  padding-bottom: 30px;
+}
+
+.subtitle {
+  position: absolute;
+  top: 5vw;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.2vw;
+  color: white;
+  z-index: 100;
+  text-align: center;
+  /* Center the text */
+  max-width: 90%;
+  /* Ensure it wraps within a reasonable width */
+  white-space: normal;
+  /* Allow the text to wrap */
 }
 
 .background {
@@ -58,9 +61,9 @@ body {
   justify-content: center;
   align-items: flex-start;
   width: 70vw;
-  max-width: 1200px;
+  max-width: 850px;
   margin: 10vw auto 0 auto;
-  padding: 20px 60px;
+  padding: 2vw 2.5vw;
 }
 
 .image-container {
@@ -75,4 +78,3 @@ body {
   width: 400px;
   height: 400px;
 }
-
