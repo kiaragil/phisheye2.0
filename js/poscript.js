@@ -28,6 +28,12 @@ function togglePaymentField() {
         phoneNumberInput.required = true;
         paymentField.style.display = "none";
     }
+    else if (paymentTypeSelect.value === "revolut") {
+        paymentField.style.display = "block";
+        paymentUsernameLabel.innerText = "Revolut Username/email:";
+        paymentUsernameInput.placeholder = "@example/hottogo@example.com";
+        paymentField.style.display = "none";
+    }
 }
 
 // Initialize Google Maps Places Autocomplete for the shipping address field
