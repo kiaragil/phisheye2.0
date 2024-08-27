@@ -20,20 +20,16 @@ function togglePaymentField() {
         paymentUsernameLabel.innerText = "Venmo Username:";
         paymentUsernameInput.placeholder = "@example";
         phoneNumberInput.required = false;
-    } else if (paymentTypeSelect.value === "applecash") {
-        phoneNumberInput.required = true;
-        paymentField.style.display = "none";
-    } 
-    else if (paymentTypeSelect.value === "zelle") {
-        phoneNumberInput.required = true;
-        paymentField.style.display = "none";
-    }
-    else if (paymentTypeSelect.value === "revolut") {
+    } else if (paymentTypeSelect.value === "revolut") {
         paymentField.style.display = "block";
-        paymentUsernameLabel.innerText = "Revolut Username/email:";
+        paymentUsernameLabel.innerText = "Revolut Username/Email:";
         paymentUsernameInput.placeholder = "@example/hottogo@example.com";
+        phoneNumberInput.required = false;
+    } else {
+        phoneNumberInput.required = true;
         paymentField.style.display = "none";
     }
+
 }
 
 // Initialize Google Maps Places Autocomplete for the shipping address field
